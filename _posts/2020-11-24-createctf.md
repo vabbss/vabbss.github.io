@@ -1,23 +1,23 @@
 ---
-layout: post
-title: 记一次组织CTF的经历
-tags: [CTF, 记录]
+bố cục: bài
+title: Nhớ kinh nghiệm tổ chức CTF
+thẻ: [CTF, ghi lại]
 ---
 
-  不会打我也能搞CTF(:-P)<!--more-->    
+Có thể làm CTF mà không cần đánh tôi (: - P) <! - more ->
 
-# 起因
-  在一年前，我[体验了一次CTF](/2019/12/16/ctf.html)，感觉挺有意思的，而且为此我甚至计划做一个以此为基础的[游戏](/2019/12/17/game.html)。可惜人不行了，除了会咕咕咕其他什么都不行。   
-  想不到就在最近，我不用参加CTF，而是直接去给其他人玩CTF的机会。最近我所在的协会要承包一次CTF的比赛，我作为协会部门的部长，自然也要参与其中。我最擅长的就是运维，所以在这次比赛，我就成为负责维护这次CTF平台的运维了。   
+# Nguyên nhân
+Một năm trước, tôi [đã trải nghiệm CTF] (/ 2019/12/16 / ctf.html), cảm giác rất thú vị và vì điều này, tôi thậm chí đã lên kế hoạch làm một [trò chơi] (/ 2019/12/17 / trò chơi. html). Thật tiếc là mọi người không thể làm được nữa, và họ không thể làm gì khác ngoài việc thủ thỉ.
+Bất quá, mới vừa rồi không phải tham gia CTF, mà là trực tiếp đi cho người khác chơi CTF. Gần đây, hiệp hội của tôi phải ký hợp đồng với một cuộc thi CTF, với tư cách là bộ trưởng của hiệp hội, tôi đương nhiên phải tham gia vào cuộc thi đó. Điều tôi làm tốt nhất là vận hành và bảo trì, vì vậy trong cuộc thi này, tôi trở thành người chịu trách nhiệm duy trì hoạt động và bảo trì nền tảng CTF.
 
-# 感受
-  成为了维护CTF系统的人之后我对CTF的了解更深了，CTF系统的本质就是一个计分板加一台靶机，然后题就那么几种，像Web、PWN这种题需要靶机，其他的Crypto、Reverse、Misc啥的就只需要把题目放到一个文件服务器里就行了。另外计分板也非常的简单，就只需要一个判断结果是不是等于设定好的flag就完事了，然后根据答题情况给分就行了。   
-  一般正式的赛事中好像flag都是动态的，每一个队伍的flag都不一样，然后每个队伍打的靶机也全部都是用docker隔离开的，像我们举行的这个CTF并不算专业，只能算是比较业余的。
+# Cảm xúc
+Sau khi trở thành người duy trì hệ thống CTF, tôi hiểu sâu hơn về CTF. Bản chất của hệ thống CTF là một bảng điểm cộng với một máy đích và sau đó chỉ là một số câu hỏi. Các câu hỏi như Web và PWN yêu cầu một máy đích . Khác Đối với Crypto, Reverse, Misc, v.v., bạn chỉ cần đặt tiêu đề vào máy chủ tệp. Ngoài ra, cách tính điểm cũng rất đơn giản, bạn chỉ cần phán đoán kết quả có bằng cờ đặt là xong rồi cho điểm theo đáp án.
+Nói chung, cờ trong các sự kiện chính thức có vẻ là động và cờ của mỗi đội là khác nhau, và sau đó tất cả các máy bay không người lái do mỗi đội bắn đều được cách ly với docker. CTF do chúng tôi tổ chức không chuyên nghiệp. Nó chỉ có thể được coi là một tương đối nghiệp dư.
 
-# 经历
-  在这次CTF中，我本来是不想管平台的事情，如果我来搭建这个平台我可能会选择[CTFd](https://github.com/CTFd/CTFd)作为本次CTF的平台。不过这个CTF在我来之前举办过几次，他们使用的是由Facebook开发的[FBCTF](https://github.com/facebookarchive/fbctf)作为整个比赛的平台。我作为运维，肯定也不会去管程序上的事情，就干脆让他们去搞相关的事情了。   
-  不过现实证明这是一个错误的决定，这个平台已经不维护了，虽然看起来确实挺好看，但是BUG也多，在这次比赛中给我们维护组带来了不少的压力。就比如说这个平台里的[这一句话](https://github.com/facebookarchive/fbctf/blob/4ec9b6be404fce1bed6d1066fccf10c4255767bb/database/countries.sql#L161)，给我们带来了很多麻烦。就这样的短短一句话，搞的正在运行的平台直接被迫停止运行。为什么呢？很简单，因为我所在的学校是中国啊，不允许这样的事情发生……   
-  另外这个FBCTF也很迷，看代码不过就是普通的PHP而已，但是部署的时候用的软件和方式都和平时不一样。正常来说这种东西一个LEMP或者LAMP就能解决问题，而它非得要一个什么hhvm的环境，不过环境不是我搭的，它用啥我倒是不在乎。然而它的i18n有问题，在[这一行](https://github.com/facebookarchive/fbctf/blob/4ec9b6be404fce1bed6d1066fccf10c4255767bb/src/controllers/IndexController.php#L598)没有加`tr`的那个函数，然后注册的时候显示就会出问题。有问题倒是没关系，大不了改了就行了，可是这个破玩意改了之后居然没反应？我搞了半天都没有搞好，后来发现因为它用了hhvm，这个东西会把php代码编译，然后直接修改代码就啥反应都没有，必须用`hhvm-repo-mode`才能更新代码😓……   
-  其他的就是数据库，那个部署的人当时居然没改字符集，用的还是拉丁文的字符集，然后存储中文的时候就会各种乱码，怎么搞都搞不回来，不过程序里面好像没有受影响，所以也就算了。   
-  还有就是领导的新需求，这也算是提前体验公司生活了，领导说要加一个功能，我肯定不会想着去接这个大坑，最后这个任务被派给了我们的PHP老师，不过老师确实专业，花了4个小时最终真的就搞成了，水平确实了的。   
-  目前这次的比赛还没有结束，不知道还会出什么新的莫名其妙的事情，敬请期待吧~
+# kinh nghiệm
+Trong CTF này, tôi không muốn quan tâm đến nền tảng. Nếu tôi định xây dựng nền tảng này, tôi có thể chọn [CTFd] (https://github.com/CTFd/CTFd) làm nền tảng của CTF này. Tuy nhiên, CTF này đã được tổ chức vài lần trước khi tôi đến và họ đã sử dụng [FBCTF] (https://github.com/facebookarchive/fbctf) do Facebook phát triển làm nền tảng cho toàn bộ cuộc thi. Vì là vận hành và bảo trì nên chắc chắn tôi không quan tâm đến thủ tục nên cứ để họ làm những việc liên quan.
+Tuy nhiên, thực tế đã chứng minh đây là một quyết định sai lầm, nền tảng này không còn được bảo trì, tuy nhìn rất ưa nhìn nhưng lại có rất nhiều lỗi, điều này đã mang lại rất nhiều áp lực cho đội ngũ bảo trì của chúng tôi trong trò chơi này. Ví dụ: [câu này] (https://github.com/facebookarchive/fbctf/blob/4ec9b6be404fce1bed6d1066fccf10c4255767bb/database/countries.sql#L161) trong nền tảng này đã mang lại cho chúng tôi rất nhiều rắc rối. Chỉ trong một câu nói ngắn gọn như vậy, nền tảng đang chạy đã trực tiếp buộc phải ngừng chạy. tại sao? Rất đơn giản, bởi vì trường học của tôi là Trung Quốc, những chuyện như thế này không được phép xảy ra ...
+Ngoài ra, FBCTF này cũng rất hấp dẫn, mã chỉ là PHP thông thường, nhưng phần mềm và phương pháp sử dụng để triển khai là khác nhau. Thông thường, loại này có thể giải quyết vấn đề với LEMP hoặc LAMP, và nó phải có môi trường hhvm, nhưng môi trường không phải của tôi, và tôi không quan tâm nó được sử dụng để làm gì. Tuy nhiên, có vấn đề với i18n của nó. Trong [dòng này] (https://github.com/facebookarchive/fbctf/blob/4ec9b6be404fce1bed6d1066fccf10c4255767bb/src/controllers/IndexController.php#L598), hàm của `tr` không thêm, và sau đó đăng ký Khi nó được hiển thị, sẽ có một vấn đề. Không quan trọng là có vấn đề gì, đại sự là muốn thay đổi, nhưng không có phản ứng gì sau cái này hỏng bét đổi? Mình làm lâu rồi mà chưa làm tốt, sau này mới biết do nó sử dụng hhvm nên cái này sẽ biên dịch mã php rồi sửa đổi trực tiếp mã nhưng không có gì xảy ra cả. Bạn phải sử dụng `hhvm-repo-mode` để cập nhật mã 😓 ......
+Cái khác là cơ sở dữ liệu. Người triển khai đã không thay đổi bộ ký tự vào thời điểm đó. Thay vào đó, bộ ký tự Latinh đã được sử dụng. Khi lưu trữ các ký tự Trung Quốc, sẽ có tất cả các loại mã bị cắt xén. Dù sao thì tôi cũng không thể lấy lại được , nhưng chương trình dường như không bị ảnh hưởng. Vì vậy, hãy quên nó đi.
+Người lãnh đạo cũng có những nhu cầu mới. Đây coi như là một kinh nghiệm đi trước trong cuộc đời công ty. Lãnh đạo nói rằng sẽ bổ sung thêm một tính năng. Tôi chắc chắn sẽ không nghĩ đến việc nhặt được lỗ hổng lớn này. nhiệm vụ này được giao cho giáo viên PHP của chúng tôi, nhưng giáo viên này thực sự rất chuyên nghiệp. Cuối cùng thì cũng phải mất 4 giờ để hoàn thành công việc và trình độ đã được xác định.
+Cuộc cạnh tranh hiện tại vẫn chưa kết thúc, tôi không biết điều gì mới và không thể giải thích được sẽ xảy ra, vì vậy hãy theo dõi ~

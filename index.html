@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 首页 - 我的文章
+title: Trang chủ-Bài viết của tôi
 ---
 
-<h1 style="display:inline"> 首页 - 我的文章 </h1><small><a href="/archives.html">Archives</a></small><br /><br />
+<h1 style="display:inline"> Trang chủ-Bài viết của tôi </h1><small><a href="/archives.html">Archives</a></small><br /><br />
 
 <hr />
 
@@ -11,13 +11,13 @@ title: 首页 - 我的文章
 <table>
 {% for post in paginator.posts %}
   <tr><td onclick="location='{{ post.url }}'">
-    <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.layout == "encrypt" %} [加密] {% endif %}</a></h2>
+    <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}{% if post.layout == "encrypt" %} [mã hóa] {% endif %}</a></h2>
   <p class="author">
     <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
     | Hits: <span id="{{ post.url }}" class="visitors-index" >Loading...</span>
   </p>
   <div class="content">
-    {{ post.excerpt | strip_html | strip_newlines }} 
+    {{ post.excerpt | strip_html | strip_newlines }}
   </div>
   </td></tr>
 {% endfor %}
@@ -54,24 +54,24 @@ title: 首页 - 我的文章
 <hr />
 <input name="live2dBGM" value="https://music.163.com/song/media/outer/url?id=523658881.mp3" type="hidden">
 <p>
-<h2>其他页面</h2>
- 
- <a href="/pixiv-index/">Pixiv图片索引API</a><br>
+<h2>Những trang khác</h2>
+
+ <a href="/pixiv-index/">API chỉ mục hình ảnh Pixiv</a><br>
 
  <a href="/git.io.html">Unlimited Git.io</a><br>
 
- <a href="/baidu.html">Baidu移动页面转换器</a><br>
+ <a href="/baidu.html">Công cụ chuyển đổi trang dành cho thiết bị di động Baidu</a><br>
 
- <a href="/card.html">抽卡</a> - 由<a href="https://github.com/eeg1412/">广树</a>大佬提供卡牌<br>
+ <a href="/card.html">Rút thẻ</a> - Phụ thuộc vào<a href="https://github.com/eeg1412/">Hiroki</a>Gã lớn cung cấp thẻ<br>
 
- <a href="/message.html">留言板</a><br>
+ <a href="/message.html">bảng tin</a><br>
 
  <a href="/links.html">Links</a><br>
 
- <a href="/proxylist.html">代理列表</a><br>
+ <a href="/proxylist.html">Danh sách proxy</a><br>
 
- <a href="/MayxDaily">Mayx日报</a><br>
+ <a href="/MayxDaily">Mayx hàng ngày</a><br>
 
 <br>
 </p>
-<small><a href="https://icp.gov.moe/?keyword=20218888" target="_blank">萌ICP备 20218888号</a></small>
+<small><a href="https://icp.gov.moe/?keyword=20218888" target="_blank">Meng ICP số 20218888</a></small>

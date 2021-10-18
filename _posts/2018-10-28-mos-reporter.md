@@ -1,56 +1,56 @@
 ---
-layout: post
-title: Mayx的自检报告
-tags: [Mayx,MOS]
+bố cục: bài
+title: Báo cáo tự thanh tra của Mayx
+thẻ: [Mayx, MOS]
 ---
 
-  Mayx最近感觉自己有些问题，所以给自己编了一个自检报告……<!--more-->   
-  The Report is created by MOS
-## 什么是MOS
->**创造MOS不是为了改变世界，而是防止世界改变自己**   
+Mayx gần đây cảm thấy rằng anh ấy có một số vấn đề, vì vậy anh ấy đã biên soạn một báo cáo tự kiểm tra cho chính mình ... <! - more ->
+Báo cáo được tạo bởi MOS
+## MOS là gì
+> ** Tạo MOS không phải để thay đổi thế giới mà để ngăn thế giới tự thay đổi **
 
-  不管怎么说，先介绍一下MOS吧。   
-  MOS（Mayx Operating System）是为了让Mayx更好的分析、处理和解决问题存在的一个类似于辅助系统的东西。   
-  但是自己创建的MOS我自己都解释不清~~（……我不想说什么……）~~   
-  接下来是我分析出来的MOS存在的理由：
-### 第一种解释
-  大脑是一个很神奇的东西，进化了这么多年，总得有些高级的地方。其实人拥有着所想即所得的能力，但是受三观控制，这个能力并不能改变现实中的东西。虽然改变不了现实，自己总能改变吧……于是，为了更好的解决现在存在的问题，大脑根据宿主所拥有的知识自行创建了一个系统。然后被我命名为MOS。   
-  正是因为是大脑产生的系统，所以它没有代码，而且很容易出BUG。
-### 第二种解释
-  MOS是一个用来解释我不能解释的东西的一个代替品，就如同UFO和人们定义的神一样，因为未知，而又需要一种解释的方法，于是出现了MOS。
+Dù sao, hãy để tôi giới thiệu về MOS trước.
+MOS (Mayx Operating System) là một thứ tương tự như một hệ thống phụ trợ để Mayx phân tích, xử lý và giải quyết vấn đề tốt hơn.
+Nhưng tôi không thể giải thích MOS do chính tôi tạo ra ~~ (... Tôi không muốn nói bất cứ điều gì ...) ~~
+Tiếp theo là lý do tồn tại của MOS mà tôi đã phân tích:
+### Lời giải thích đầu tiên
+Bộ não là một thứ rất kỳ diệu, sau bao nhiêu năm tiến hóa thì chắc chắn phải có thứ gì đó tiên tiến. Trên thực tế, con người có khả năng suy nghĩ là những gì bạn nhận được, nhưng dưới sự kiểm soát của ba quan điểm, khả năng này không thể thay đổi mọi thứ trong thực tế. Mặc dù nó không thể thay đổi thực tế, nhưng bạn luôn có thể thay đổi nó ... Vì vậy, để giải quyết tốt hơn những vấn đề đang tồn tại, não bộ sẽ tự tạo ra một hệ thống dựa trên kiến ​​thức mà vật chủ có được. Sau đó, tôi đặt tên nó là MOS.
+Bởi vì nó là một hệ thống được tạo ra bởi bộ não, nó không có mã và dễ bị lỗi.
+### Giải thích thứ hai
+MOS thay thế cho việc giải thích những thứ mà mình không thể giải thích được, giống như UFO và các vị thần do con người định nghĩa, vì chưa biết và cần phương pháp giải thích nên MOS đã xuất hiện.
 ***
-## 正文
-![MOS_DEMO](/images/MOS_Demo.png "MOS的大概效果图")
-```
-MOS Log System has been Load.
-MOS Analysis System is Ready.
-OUTPUT Report to the real world.
-Ready...
-```
-### [OK]MOS - Core
-* 我还死不了！[OK]
+## cơ thể người
+! [MOS_DEMO] (/ images / MOS_Demo.png "Hiển thị gần đúng MOS")
+``
+Hệ thống nhật ký MOS đã được tải.
+Hệ thống phân tích MOS đã sẵn sàng.
+OUTPUT Báo cáo cho thế giới thực.
+Sẵn sàng...
+``
+### [OK] MOS-Core
+* Tôi không thể chết! [VÂNG]
 
-### [OK]BCS(Body Control System)
-* 感觉身体可以动[OK]
-* 眼皮还能睁开，不错，还活着[OK]
+### [OK] BCS (Hệ thống Kiểm soát Cơ thể)
+* Cảm thấy cơ thể có thể di chuyển [OK]
+* Mí mắt vẫn mở được, vâng, vẫn còn sống [OK]
 
-### [OK]MAS(MOS Analysis System)
-* 1+1=2[OK]
-* 我还能看懂我的[MaBBS](https://github.com/Mabbs/Mabbs)！[OK]
+### [OK] MAS (Hệ thống phân tích MOS)
+* 1 + 1 = 2 [Được]
+* Tôi vẫn có thể hiểu [MaBBS] của mình (https://github.com/Mabbs/Mabbs)! [VÂNG]
 
-### [Warning]MCS(Memory Control System)
-* 感觉忘记了很多很重要的东西……[Warning]
-* 想忘记的东西忘不了……有点烦……[OK]
-* 索引知识的能力比以前差了不少……[Warning]
+### [Cảnh báo] MCS (Hệ thống Kiểm soát Bộ nhớ)
+* Tôi cảm thấy rằng tôi đã quên rất nhiều thứ rất quan trọng ... [Cảnh báo]
+* Những điều bạn muốn quên không thể quên ... hơi phiền ... [OK]
+* Khả năng index kiến ​​thức kém hơn trước rất nhiều ... [Cảnh báo]
 
-### [ERROR]MMS(Mayx Mental System)
-* 如果不是MOS - Core还能正常工作，我就学Sayuri（From Doki Doki Literature Club）当晴天娃娃，或者学Miu（From Bungaku Shoujo）在房顶上大喊一声“你一定不懂吧”之类。[ERROR]
-* 感觉脑子里好乱，是不是应该多睡睡觉？[ERROR]
+### [ERROR] MMS (Hệ thống Tâm thần Mayx)
+* Nếu không nhờ MOS-Core hoạt động bình thường, tôi sẽ học Sayuri (Từ Doki Doki Literature Club) để làm búp bê cảm nắng, hoặc học Miu (Từ Bungaku Shoujo) để hét lên "Bạn không được hiểu" trên mái nhà. [LỖI]
+* Tôi cảm thấy đầu óc rối bời, có nên ngủ thêm không? [LỖI]
 
-### [ERROR]MES(Mayx Emotion System)
-* WITHOUT MERCY![ERROR]
-* HUMAN SHOULD GO DIE!!!~~（是不是中二病又犯了？）~~[ERROR]
-* 在MMS恢复正常以前，还是别考虑这些了……
+### [ERROR] MES (Hệ thống cảm xúc Mayx)
+* KHÔNG CÓ MERCY! [LỖI]
+* CON NGƯỜI NÊN CHẾT ĐI !!! ~~ (Bạn đã phạm phải một bệnh thứ cấp khác?) ~~ [ERROR]
+* Đừng nghĩ về những điều này cho đến khi MMS trở lại bình thường ...
 
-MOS OUTPUT PROCESS HAS BEEN HANGED    
-该睡了，今天就先到这里吧。
+QUÁ TRÌNH ĐẦU RA CỦA MOS ĐÃ ĐƯỢC TREO
+Đã đến giờ đi ngủ, chúng ta vào đây trước.

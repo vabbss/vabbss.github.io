@@ -1,20 +1,20 @@
 ---
-layout: post
-title: Mayx的博客换域名啦
-tags: [Mayx, 通告]
+bố cục: bài
+title: Blog Mayx đã thay đổi tên miền
+tags: [Mayx, thông báo]
 ---
 
-由于垃圾GFWban了我的Github Pages，所以我用反向代理来帮助我解决访问的问题。<!--more-->   
+Vì GFW đã cấm Trang Github của tôi nên tôi đã sử dụng proxy ngược để giúp tôi giải quyết vấn đề truy cập. <! - more ->
 
-# 地址
+# Địa chỉ
 <https://blog.mayx.tk/>
 
-# 提供
-由[Github](//github.com)提供Github Pages服务   
-由[Cloudflare](//cloudflare.com)提供CDN&DNS服务   
-由[花火学园](//www.say-huahuo.com)提供反向代理服务   
-由[Freenom](//www.freenom.com)提供免费域名   
+# cung cấp
+Dịch vụ Trang Github được cung cấp bởi [Github] (// github.com)
+Dịch vụ CDN & DNS do [Cloudflare] (// cloudflare.com) cung cấp
+Dịch vụ proxy ngược được cung cấp bởi [花火 学园] (// www.say-huahuo.com)
+Tên miền miễn phí được cung cấp bởi [Freenom] (// www.freenom.com)
 
-# 缺陷
-由于Nginx默认不能替换网页内容，跟着教程也半天弄不好，所以Atom和Sitemap包括一些SEO的设置都是原站（mabbs.github.io）的，这一点很伤啊……   
-还有就是因为用的是免费域名，也不知会不会有一天就消失不见了……而且还要续费……
+# khuyết điểm
+Vì Nginx không thể thay thế nội dung web theo mặc định và tôi không thể tìm ra nó với hướng dẫn trong một thời gian dài, vì vậy Atom và Sơ đồ trang web, bao gồm một số cài đặt SEO, là từ trang web gốc (mabbs.github.io), điều đó rất đau ...
+Ngoài ra, vì nó là một tên miền miễn phí, tôi không biết liệu một ngày nào đó nó sẽ biến mất ... và nó sẽ được gia hạn ...

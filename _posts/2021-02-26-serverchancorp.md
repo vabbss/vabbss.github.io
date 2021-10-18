@@ -1,18 +1,19 @@
 ---
-layout: post
-title: 做一个Server酱·TurboMini企业应用版
-tags: [Server, PHP, 微信]
+bố cục: bài
+title: Làm nước sốt cho máy chủ · Phiên bản ứng dụng doanh nghiệp TurboMini
+các thẻ: [Máy ​​chủ, PHP, WeChat]
 ---
 
-  简单的事情应该自己去做<!--more-->    
-  
-# 起因
-  这个月初，由于Server酱要挂了然后Turbo版又要钱所以我特地写了一个[Server酱·TurboMini测试号版](/2021/02/02/serverchan.html)，然而据那个开发Server酱的人说微信要下掉的是模板消息，而不是故意坑人不做这个东西了。过了一段时间后那个开发者说可以用企业微信啥的通道继续搞，顺便还给普通账户使用Turbo版的一点点权限，然后价格似乎也稍微降了一点？   
-  但问题是我们之所以使用Server酱只是因为注册服务号很麻烦，微信认证要主体，所以我们才用，用这个的人也应该都是开发者吧？那如果说资源都是我们出的话还何必用那个一堆广告的Server酱呢？而且想好好用还要花钱，都是开发者了没必要交这种智商税吧？   
-  不过看在它还给我们推荐了些路子，那也就不用太过分的说它了吧。   
-  
-# 如何制作？
-  我也倒是去看了看企业微信的开发文档，和公众号的开发文档那就是大同小异啊，所以今天依然是一句话解决问题：
+Những việc đơn giản nên tự làm <! - more ->
+
+# Nguyên nhân
+Vào đầu tháng này, vì nước sốt Máy chủ sắp ngừng hoạt động và phiên bản Turbo cần tiền, tôi đã đặc biệt viết [Nước sốt máy chủ · phiên bản beta TurboMini] (/ 2021/02/02 / serverchan.html). Tuy nhiên, Theo người đã phát triển nước sốt Máy chủ Mọi người nói rằng WeChat sẽ tải xuống các thông báo mẫu thay vì cố tình lừa mọi người làm điều này. Sau một khoảng thời gian, nhà phát triển nói rằng anh ta có thể sử dụng WeChat của công ty hoặc các kênh khác để tiếp tục làm điều đó. Nhân tiện, anh ta đã cấp cho tài khoản thông thường một chút quyền sử dụng phiên bản Turbo và giá có vẻ giảm một chút ?
+Nhưng vấn đề là chúng ta chỉ sử dụng Server sauce vì đăng ký tài khoản dịch vụ rất rắc rối, xác thực WeChat yêu cầu main nên chúng ta mới sử dụng. Người sử dụng cái này chắc cũng là nhà phát triển đúng không? Sau đó, tại sao lại sử dụng nước sốt máy chủ của một loạt các quảng cáo nếu tất cả các tài nguyên đều do chúng ta sản xuất? Và muốn sử dụng tốt thì phải tốn tiền, đều là nhà phát triển, không cần phải đóng thuế IQ kiểu này đúng không?
+Nhưng thấy rằng nó cũng đã đề xuất một số cách cho chúng ta, thì không cần phải nói quá nhiều về nó.
+
+# Làm thế nào để thực hiện?
+Tôi cũng đã xem qua tài liệu phát triển của WeChat doanh nghiệp, tài liệu này tương tự như tài liệu phát triển của tài khoản chính thức, vì vậy hôm nay tôi vẫn giải quyết vấn đề trong một câu:
+
 ```php
 <?php
 $cid='企业ID';
@@ -23,31 +24,31 @@ $title='标题';
 $content='内容';
 file_get_contents('https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token='.json_decode(file_get_contents('https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid='.$cid.'&corpsecret='.$secret),true)['access_token'],false,stream_context_create(['http' => array('method'=>'POST','header'=>"content-type: application/json; charset=UTF-8",'content'=>'{"touser":"'.$userid.'","msgtype":"text","agentid":'.$agentId.',"text":{"content":"'.$title.'\n'.$content.'"}}')]));
 ```
-  从体验上来说的话这个企业应用版的体验还是不错的，和测试号相比首先可以在主页显示，虽然有二级但是两边的图标和名字都是可以自定义的，而且API的调用次数也要比测试号多很多，用起来还是挺不错的，和测试号比唯一的缺点应该就是首次配置有点麻烦。   
-  另外我在写这个东西的时候发现这个API还是和测试号的API不太一样，测试号那个在发post请求的时候post可以小写，但是这个垃圾企业微信的API的POST必须大写，不然就400，搞得我调试了半天才调试好。
-  
-# 如何配置？
-  一样这个是兼容Server酱的，需要的参数和Server酱需要的一样多，所以配置也是完全兼容的。不过考虑到Server酱可怜的连每月5kw次请求都受不住，配置方法我就在这里再写一遍吧：   
-## 第一步，注册企业
-  用电脑打开[企业微信官网](https://work.weixin.qq.com/)，注册一个企业
-## 第二步，创建应用
-  注册成功后，点「管理企业」进入管理界面，选择「应用管理」 → 「自建」 → 「创建应用」    
-  应用名称随便填，比如「Mayx的机器人」，应用logo随便找一个就行，可见范围可以选择自己，如果想推送给其他人就选公司。   
-  创建完成后进入应用详情页，可以得到应用ID(agentid)，应用Secret(secret)，复制并填到代码中。
-## 第三步，获取企业ID
-  进入「[我的企业](https://work.weixin.qq.com/wework_admin/frame#profile)」页面，拉到最下边，可以看到企业ID，复制并填到上方。   
-  推送UID不知道怎么填就直接填`@all`，推送给公司全员。
-## 第四步，推送消息到微信
-  进入「我的企业」 → 「[微信插件](https://work.weixin.qq.com/wework_admin/frame#profile/wxPlugin)」，拉到下边扫描二维码，关注以后即可收到推送的消息。   
-  这里一样图标觉得不好看也可以自己改。
-  
-# 可以改进的地方
-  首先，目前的这个版本是直接发送的信息，所以不支持Markdown，看起来也很丑。其实呢，我看文档里有说可以直接发Markdown消息，不过这样的话微信接收不到……   
-  其实测试号版那个我看完文档之后就在想如果能把内容写到图文消息里也不错啊，可惜图文消息那个要一张头图，做不到开箱即用，这个企业微信版一样也有这个问题……   
-  另外我还看到在文档里有一个文本卡片消息非常的不错，但是有一个问题是我不知道为啥它的URL是必选的，那这样的话同样我也没办法做到开箱即用……   
-  当然要做的话也不难，自己去看[官方文档](https://work.weixin.qq.com/api/doc/90000/90135/90236)就好了，也没有多复杂。   
-  另外测试号版就算模板消息不能用，那也不是不能推送啊，用[群发预览接口](https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Batch_Sends_and_Originality_Checks.html)不好吗？虽然有每天100次的限制，但又不是不能用啊，而且还能减少对Server酱服务器的压力，我看这所谓要捐助维护就是想着赚钱，那么多广告早就够交服务器费用了，我也是维护网站的还能不知道这请求要多少钱的服务器？   
-  然后看微信发的[下线模板消息的通知](https://developers.weixin.qq.com/community/develop/doc/000a4e1df800d82acb9b7fb5e5b001)，应该大概率不会下线这个功能，只是说了灰度测试而已，有可能只是多加了比如授权之类的操作而已。
+Ở góc độ trải nghiệm, trải nghiệm phiên bản ứng dụng doanh nghiệp này vẫn tốt, so với số thử nghiệm có thể hiển thị trên trang chủ trước, tuy có cấp phụ nhưng có thể tùy chỉnh biểu tượng và tên hai bên. và số lượng lệnh gọi API cũng được yêu cầu. Nó nhiều hơn số thử nghiệm và nó khá tốt để sử dụng. Nhược điểm duy nhất của việc so sánh với số thử nghiệm là hơi rắc rối khi cấu hình lần đầu tiên .
+Ngoài ra, khi viết cái này, tôi thấy API này vẫn khác với API của tài khoản thử nghiệm. Bài đăng của tài khoản thử nghiệm có thể viết thường khi gửi yêu cầu đăng bài, nhưng POST của API WeChat của rác này công ty phải được viết hoa, nếu không nó sẽ là 400. Tôi đã mất nhiều thời gian để gỡ lỗi nó.
 
-# 总结
-  其实要不是Server酱有那么多广告，还以捐赠名义收费，而且还限制那么多的话其实也还算不错的产品，而且也是它给了我看微信开发文档的动力，让我在假期里还有点事干。只是既然最重要的服务号就要没了，那么它也该被开发者们放弃了吧。
+# Làm thế nào để cấu hình?
+Tương thích với nước sốt Máy chủ và các thông số yêu cầu cũng nhiều như các thông số được yêu cầu bởi nước sốt máy chủ, vì vậy cấu hình cũng hoàn toàn tương thích. Nhưng xét thấy nước sốt máy chủ quá kém đến mức không thể chịu được yêu cầu thậm chí 5kw mỗi tháng, tôi sẽ viết lại phương pháp cấu hình ở đây:
+## Bước đầu tiên là đăng ký công ty
+Mở [trang web chính thức WeChat của công ty] (https://work.weixin.qq.com/) bằng máy tính để đăng ký công ty
+## Bước thứ hai, tạo một ứng dụng
+Sau khi đăng ký thành công, bấm vào "Quản lý Doanh nghiệp" để vào giao diện quản lý, chọn "Quản lý Ứng dụng" → "Tự xây dựng" → "Tạo Ứng dụng"
+Điền tên ứng dụng tùy thích, chẳng hạn như "Robot của Mayx". Chỉ cần tìm một trong các biểu trưng của ứng dụng. Bạn có thể chọn phạm vi hiển thị của riêng mình. Nếu bạn muốn đẩy nó cho người khác, hãy chọn công ty.
+Sau khi tạo xong, vào trang chi tiết ứng dụng, bạn có thể lấy ID ứng dụng (agentid), ứng dụng Secret (bí mật), copy và điền mã.
+## Bước thứ ba, lấy ID công ty
+Vào trang "[Doanh nghiệp của tôi] (https://work.weixin.qq.com/wework_admin/frame#profile)", kéo xuống dưới cùng, bạn có thể thấy ID công ty, sao chép và điền vào trên cùng.
+Nếu bạn không biết cách điền UID đẩy, chỉ cần điền vào `@ all` và đẩy nó cho tất cả nhân viên của công ty.
+## Bước thứ tư, đẩy tin nhắn lên WeChat
+Đi tới "Doanh nghiệp của tôi" → "[WeChat Plugin] (https://work.weixin.qq.com/wework_admin/frame#profile/wxPlugin)", kéo nó xuống và quét mã QR, và bạn sẽ nhận được thông báo sau khi bạn theo dõi Tin tức.
+Bạn có thể thay đổi biểu tượng tại đây nếu bạn không cho rằng nó có vẻ đẹp.
+
+# Những gì có thể được cải thiện
+Trước hết, phiên bản hiện tại là để gửi tin nhắn trực tiếp, vì vậy nó không hỗ trợ Markdown, và nó trông rất xấu. Thực ra mình đọc trong tài liệu thấy có thể gửi trực tiếp tin nhắn Markdown nhưng trường hợp này WeChat không nhận được ...
+Trên thực tế, phiên bản beta, sau khi đọc tài liệu, tôi nghĩ sẽ rất tuyệt nếu tôi có thể viết nội dung trong thông báo đồ họa, thật không may, thông báo đồ họa yêu cầu hình ảnh tiêu đề, không thể sử dụng được. Phiên bản WeChat Vấn đề tương tự ...
+Ngoài ra mình cũng thấy trong tài liệu có thông báo thẻ văn bản rất hay, nhưng có một vấn đề là không hiểu sao lại bắt buộc phải có URL của nó, thì không làm được đâu. ..…
+Tất nhiên, nó không khó để làm điều đó, chỉ cần vào [tài liệu chính thức] (https://work.weixin.qq.com/api/doc/90000/90135/90236) cho chính bạn, và nó không quá phức tạp.
+Ngoài ra, ngay cả khi thông báo mẫu không thể được sử dụng trong phiên bản beta, nó không phải là không thể đẩy nó. Sử dụng [giao diện xem trước hàng loạt] có tốt không (https://developers.weixin.qq.com/ doc / offiaccount / Message_Management / Batch_Sends_and_Originality_Checks.html)? Mặc dù có giới hạn 100 lần / ngày nhưng không phải là không có, hơn nữa còn có thể giảm áp lực cho máy chủ Nước sốt. Mình nghĩ cái gọi là quyên góp và bảo trì là để kiếm tiền. Vậy quảng cáo nhiều như vậy cũng đủ lâu rồi để trả phí máy chủ. Tôi cũng là máy chủ duy trì trang web, bạn không biết chi phí yêu cầu là bao nhiêu?
+Sau đó, hãy xem [Thông báo về tin nhắn mẫu ngoại tuyến] (https://developers.weixin.qq.com/community/develop/doc/000a4e1df800d82acb9b7fb5e5b001) do WeChat gửi, có khả năng cao là tính năng này sẽ không ngoại tuyến, but only the grayscale Nó chỉ là thử nghiệm, nó có thể chỉ thêm các hoạt động khác như ủy quyền.
+
+# Tổng hợp
+Trên thực tế, nếu không có Server Sauce với quá nhiều quảng cáo, thu phí dưới danh nghĩa quyên góp và quá nhiều hạn chế, thì nó thực sự sẽ là một sản phẩm tốt, và nó cũng cho tôi động lực để đọc các tài liệu phát triển WeChat , điều đó khiến tôi vẫn còn một chút trong kỳ nghỉ. Làm việc. Chỉ là vì tài khoản dịch vụ quan trọng nhất đã biến mất, nên các nhà phát triển sẽ bỏ nó đi.

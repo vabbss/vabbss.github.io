@@ -35,13 +35,13 @@ function onbtnDecrypto() {
     });
 
     if (decryptedData.sigBytes < 0) {
-        document.getElementById("output").innerHTML = "解密失败！密文或者key错误!";
+        document.getElementById("output").innerHTML = "Không giải mã được! Bản mã hoặc lỗi khóa";
         return;
     }
     try {
         decryptedData.toString(CryptoJS.enc.Utf8)
     } catch(e) {
-        document.getElementById("output").innerHTML = "解密失败！密文或者key错误!";
+        document.getElementById("output").innerHTML = "Không giải mã được! Bản mã hoặc lỗi khóa";
         return;
     }
     var decryptedStr = decryptedData.toString(CryptoJS.enc.Utf8);
@@ -49,7 +49,7 @@ function onbtnDecrypto() {
     document.getElementById("pwinput").style.display = "none";
 }
 </script>
-<div id="pwinput">{{ page.tips | default: "请输入密码:" }}<br />
-   <input id="inputkey" type="password" /> <button onclick="onbtnDecrypto()">解密</button>
+<div id="pwinput">{{ page.tips | default: "Xin vui lòng nhập mật khẩu:" }}<br />
+   <input id="inputkey" type="password" /> <button onclick="onbtnDecrypto()">Giải mã</button>
 </div>
 <div id="output"></div>  <br />

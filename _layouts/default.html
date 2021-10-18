@@ -15,8 +15,8 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    
-{% if site.google_analytics %}    
+
+{% if site.google_analytics %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
@@ -26,25 +26,25 @@
 
   gtag('config', '{{ site.google_analytics }}');
   var lastUpdated = new Date("{{ site.time | date: "%FT%T%z" }}");
-  Date.prototype.format = function(fmt) { 
-     var o = { 
-        "M+" : this.getMonth()+1,                 //月份 
-        "d+" : this.getDate(),                    //日 
-        "h+" : this.getHours(),                   //小时 
-        "m+" : this.getMinutes(),                 //分 
-        "s+" : this.getSeconds(),                 //秒 
-        "q+" : Math.floor((this.getMonth()+3)/3), //季度 
-        "S"  : this.getMilliseconds()             //毫秒 
-    }; 
+  Date.prototype.format = function(fmt) {
+     var o = {
+        "M+" : this.getMonth()+1,                 //月份
+        "d+" : this.getDate(),                    //日
+        "h+" : this.getHours(),                   //小时
+        "m+" : this.getMinutes(),                 //分
+        "s+" : this.getSeconds(),                 //秒
+        "q+" : Math.floor((this.getMonth()+3)/3), //季度
+        "S"  : this.getMilliseconds()             //毫秒
+    };
     if(/(y+)/.test(fmt)) {
-            fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length)); 
+            fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
     }
      for(var k in o) {
         if(new RegExp("("+ k +")").test(fmt)){
              fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
          }
      }
-    return fmt; 
+    return fmt;
   }
 </script>
 {% endif %}
@@ -73,13 +73,13 @@
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
+
         {% if site.logo %}
           <img src="{{ site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-        
+
         <p><form action="/search.html"><input type="text" name="keyword" id="search-input-all" placeholder="Search blog posts.."> <input type="submit"></form></p>
 
         {% if site.github.is_project_page %}
@@ -89,7 +89,7 @@
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
-        
+
         <a href="{{ "/Mabbs/" | relative_url }}">About Me</a>
       </header>
       <section>
@@ -107,7 +107,7 @@
         </div>
         <div class="live_talk_input_text_body">
         	<input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
-            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+            <button type="button" class="live_talk_send_btn" id="talk_send">gửi</button>
         </div>
     </div>
     <input name="live_talk" id="live_talk" value="1" type="hidden" />
@@ -122,22 +122,22 @@
         <input id="duType" value="douqilai" type="hidden">
     </div>
 </div>
-<div id="open_live2d">召唤伊斯特瓦尔</div>
+<div id="open_live2d">Triệu hồi Eastvale</div>
     <!-- <![endif]-->
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Made with ❤ by Mayx<br />Last updated at <script>document.write(lastUpdated.format("yyyy-MM-dd hh:mm:ss"));</script><br /> 总字数：{% assign count = 0 %}
+        <p><small>Made with ❤ by Mayx<br />Last updated at <script>document.write(lastUpdated.format("yyyy-MM-dd hh:mm:ss"));</script><br /> Tổng số từ：{% assign count = 0 %}
 {% for post in site.posts %}
     {% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
     {% assign count = count | plus: single_count %}
 {% endfor %}
 {% if count > 10000 %}
-    {{ count | divided_by: 10000 }} 万 {{ count | modulo: 10000 }}
+    {{ count | divided_by: 10000 }} mười nghìn {{ count | modulo: 10000 }}
 {% else %}
     {{ count }}
-          {% endif %} - 文章数：{% for post in site.posts %}
+          {% endif %} - Số lượng bài báo：{% for post in site.posts %}
               {% assign co = co | plus: 1 %}
           {% endfor %}{{ co }} - <a href="{{ "/atom.xml" | relative_url }}" >Atom</a> - <a href="{{ "/README.html" | relative_url }}" >About</a></small></p>
       </footer>

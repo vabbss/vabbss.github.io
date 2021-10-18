@@ -1,15 +1,15 @@
 ---
-layout: default
-title: 代理列表
+bố cục: mặc định
+title: danh sách proxy
 ---
 
-# 代理列表
-考虑到中国对于Github Pages在很多地区都有一定程度的解析异常，所以我为我的博客做了很多反向代理。以下代理站均为官方授权：   
-（根据可能的可用性排序）   
-<https://blog.mayx.workers.dev/>   
-<https://mayx.mabbs.repl.co/>   
-<https://mayx.glitch.me/>   
-<https://blog.mayx.me/>   
-<https://yuki.gear.host/>   
+# Danh sách proxy
+Xét thấy rằng Trung Quốc có một mức độ bất thường trong phân tích cú pháp nhất định đối với các Trang Github ở nhiều khu vực, vì vậy tôi đã thực hiện rất nhiều proxy ngược cho blog của mình. Các đại lý sau được ủy quyền chính thức:
+(Sắp xếp tùy theo tình trạng có thể có)
+<https://blog.mayx.workers.dev/>
+<https://mayx.mabbs.repl.co/>
+<https://mayx.glitch.me/>
+<https://blog.mayx.me/>
+<https://yuki.gear.host/>
 
-以后我可能会尝试用镜像的方式更好的运用带有CI功能的静态网站托管商来提高本站的可用性。
+Trong tương lai, tôi có thể thử sử dụng tính năng phản chiếu để sử dụng tốt hơn các nhà cung cấp dịch vụ lưu trữ trang web tĩnh có chức năng CI để cải thiện khả năng sử dụng của trang web này.

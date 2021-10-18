@@ -1,25 +1,25 @@
 ---
-layout: post
-title: 关于去中心化分布式系统的探索
-tags: [分布式, 区块链]
+bố cục: bài
+title: Khám phá hệ thống phân tán phi tập trung
+các thẻ: [phân phối, blockchain]
 ---
 
-  向开放的网络世界前进！<!--more-->    
-  
-# 过去
-  在6年前的某一天，我在洗完澡之后突然想研究一下分布式计算，那时候我在网上了解到的比较经典的两种大型分布式计算项目有两种，一种是以BOINC为代表的有中心的分布式计算软件，另外就是比特币为首的区块链应用。当时我了解完原理之后觉得比特币这种东西计算的完全都是没有意义的东西，而且这个计算本身不能产生任何价值。而BOINC进行的大多数是为科学的计算，虽然对我来说没有价值，但是它至少是有意义的。所以我就选择了另外一条路，也就是为使用BOINC的项目进行志愿计算。不过也正是这个原因，我有了不少基于BOINC的[World Community Grid](https://www.worldcommunitygrid.org/stat/viewMemberInfo.do?userName=Mayx)的点数，然后我就错过了发财的机会😂。   
+Hướng tới một thế giới trực tuyến mở! <! - more ->
 
-# 现在
-  前段时间正好来了一次矿潮，我虽然对挖矿没什么兴趣但是还是被带上了车，不过我研究了一段时间发现虽然挖矿确实是个烂行为，但是它这个去中心化的分布式系统还是有点意思，它的特点就是如果相信它的人多，那么就没有人能摧毁它，而且内容都是公平公正公开的，谁都能看得见而且也不能被篡改。   
-  不过这个所谓的区块链不是不能篡改，而是篡改难度很大，篡改它必须要比所有其他节点的计算能力都强，以至于可以很轻松的比其他节点多算出很多个有效区块，然后根据协议其他节点就只能去相信这条最长的链。不过具体细节我没太了解，所以如果说的不对也请各位指正。   
-  但是目前来看的话区块链貌似除了加密货币还没有什么太多的应用，而且我感觉它们大多数应用都是在做无用功，像挖矿干的事情全部都是通过很消耗计算资源的方式来计算一些NP问题，而且还是用像遍历这样的方法。要是说这个计算能为数学做出多大贡献，那我觉得还是有意义的，然而这计算的纯粹就只是比赛谁解题解的多，然后还要给自己解的题签个名证明是自己解的，然后通过这个稀有度提高价值外，真的对这个世界没有一点点帮助。   
-  虽然说区块链本身通过记录数据有点用，或者像使用IPFS把存东西当作证明方法的Fil、还有ETH的什么智能合约啥的，但是相比于消耗的能源来说还是很不合适的，毕竟从理论上来说，如果使用中心化的方式实现同样的功能，消耗的资源要少太多了。   
-  比如说像BOINC这种，消耗的计算资源大多数都在为了解决实际问题，或者是像PCDN，消耗的存储与网络资源基本上都是为了要服务的用户所消耗。这些中心化的分布式系统资源利用率很高，干的活基本上都是变成了实际有意义的东西，虽然说Fil也有点意义吧……但是它在证明自己有这个资源的过程中要消耗大量的计算资源，资源利用率实在是很低。还有就是BTT啥的，不过那个我没太看懂而且也不怎么出名就不说了。最近貌似还有个啥BZZ也是个分布式存储的……总之不太了解的我还是不多加评论了。   
-  
-# 未来
-  不过我对这种去中心的分布式系统还是很看好的，这种就相当于是通过代码做中心，就像指导方案一样，而且通过数学的方式约束也更有公信力。像这样的系统更加难以破坏，而且很公平，相比于中心化的比如说公司或者政府更加容易被人相信。不过只要是系统那就还是得要人来维护，而人总是被利益驱动，所以如果没有奖励，也不会有人维护它，所以像用代币来激励维护系统的人这个我也能理解。   
-  所以我希望以后能出现这样的一个系统，它可以精确的统计计算、存储以及网络资源，然后量化换成代币，而且这一过程不需要使用很多资源，使用这些资源的人可以通过代币来购买这些服务，然后为了保证服务质量，也可以通过质押之类的办法来让很多服务提供商来提高上线率之类的，然后服务商就是各个挖矿的用户，所以我也希望能不出现矿池这种情况，总之具体情况得等这个东西设计出来才行。   
-  
-# 后记
-  本来我还想说一说去中心化分布式系统与现实的关系，不过最近我又犯期末综合征了，身体各个系统都在返回`Status: Degraded`，希望别哪天给我`Status: Offline`了😂。   
-  总之就是这样今天我先写到这里吧。
+# quá khứ
+Vào một ngày cách đây 6 năm, sau khi tắm xong, tôi đột nhiên muốn nghiên cứu về điện toán phân tán, lúc đó tôi biết đến hai dự án điện toán phân tán quy mô lớn kinh điển trên Internet, một trong số đó là BOINC. Nó đại diện cho một máy tính phân tán tập trung. và phần mềm kia là một ứng dụng blockchain do Bitcoin dẫn đầu. Vào thời điểm đó, sau khi tôi hiểu nguyên lý, tôi cảm thấy những thứ như Bitcoin hoàn toàn là những thứ vô nghĩa, và bản thân việc tính toán cũng không thể tạo ra bất kỳ giá trị nào. Hầu hết các phép tính do BOINC thực hiện đều là các phép tính khoa học, mặc dù nó không có giá trị gì đối với tôi nhưng ít nhất nó cũng có ý nghĩa. Vì vậy, tôi đã chọn một cách khác, đó là tính toán tự nguyện cho các dự án sử dụng BOINC. Nhưng vì lý do này, tôi có rất nhiều điểm dựa trên BOINC [Lưới cộng đồng thế giới] (https://www.worldcommunitygrid.org/stat/viewMemberInfo.do?userName=Mayx), và sau đó tôi đã bỏ lỡ cơ hội kiếm tiền 😂 .
+
+# hiện nay
+Một thời gian trước, đã xảy ra một làn sóng khai thác. Mặc dù tôi không quan tâm đến việc khai thác, tôi vẫn bị đưa lên xe. Tuy nhiên, tôi đã nghiên cứu một thời gian và thấy rằng mặc dù khai thác thực sự là một hành vi xấu, nhưng hệ thống phân tán phi tập trung của nó là Điều thú vị là, đặc điểm của nó là nếu có nhiều người tin thì không ai có thể phá hủy nó, và nội dung rất công bằng và cởi mở, ai cũng có thể xem được và không thể giả mạo được.
+Tuy nhiên, cái gọi là blockchain này không phải là nó không thể bị giả mạo mà là nó rất khó bị giả mạo, nó phải được giả mạo mạnh hơn tất cả các nút khác để có thể dễ dàng tính toán nhiều khối hợp lệ hơn các nút khác. , và sau đó Theo thỏa thuận, các nút khác chỉ có thể tin tưởng vào chuỗi dài nhất. Tuy nhiên, tôi không biết chi tiết, vì vậy vui lòng sửa cho tôi nếu bạn nói sai.
+Nhưng hiện tại, có vẻ như blockchain không có nhiều ứng dụng khác ngoài tiền điện tử và tôi cảm thấy rằng hầu hết các ứng dụng của chúng đang làm những việc vô ích và tất cả những thứ như khai thác đều được thực hiện thông qua một cách tiêu tốn tài nguyên máy tính. Tính toán một số vấn đề NP, và vẫn sử dụng các phương thức như traversal. Nếu nói phép tính này có thể đóng góp bao nhiêu cho toán học thì tôi nghĩ nó có ý nghĩa, tuy nhiên phép tính hoàn toàn là xem ai giải được bài nhiều hơn trong cuộc thi, và sau đó bạn phải ký tên để chứng minh rằng bạn đã giải được. bởi chính bạn., và sau đó tăng giá trị thông qua sự hiếm có này, nó thực sự không giúp ích gì cho thế giới.
+Mặc dù bản thân blockchain có phần hữu ích bằng cách ghi lại dữ liệu, hoặc như Fil sử dụng IPFS để lưu trữ mọi thứ như một phương pháp bằng chứng hoặc các hợp đồng thông minh của ETH, nó vẫn rất không phù hợp so với năng lượng tiêu thụ. Xét cho cùng, về lý thuyết, nếu cùng một chức năng được thực hiện một cách tập trung, tài nguyên tiêu thụ sẽ ít hơn nhiều.
+Ví dụ, như BOINC, hầu hết tài nguyên máy tính được sử dụng là để giải quyết các vấn đề thực tế, hoặc như PCDN, tài nguyên mạng và lưu trữ được sử dụng về cơ bản được người dùng sử dụng để được phục vụ. Các hệ thống phân tán tập trung này có tỷ lệ sử dụng tài nguyên cao. Về cơ bản, công việc chúng làm đã trở nên thiết thực và có ý nghĩa. Tuy Fil hơi có ý nghĩa ... nhưng cần chứng minh rằng nó có tài nguyên này. Tốn nhiều tài nguyên tính toán, và việc sử dụng tài nguyên thực sự thấp. Cũng có BTT, nhưng tôi không hiểu điều đó và tôi không nổi tiếng lắm. Có vẻ như gần đây có một BZZ khác cũng là một kho lưu trữ phân tán ... Dù sao thì tôi cũng không biết nhiều về nó.
+
+# Tương lai
+Tuy nhiên, tôi vẫn rất lạc quan về loại hệ thống phân tán phi tập trung này, tương đương với việc thực hiện trung tâm thông qua mã, giống như một kế hoạch hướng dẫn, và nó đáng tin cậy hơn thông qua các ràng buộc toán học. Một hệ thống như thế này khó bị phá hủy và công bằng hơn, và nó dễ được tin cậy hơn một công ty hoặc chính phủ tập trung. Tuy nhiên, miễn là nó là một hệ thống, mọi người vẫn phải duy trì nó, và mọi người luôn được thúc đẩy bởi lợi ích, vì vậy nếu không có phần thưởng, sẽ không ai duy trì nó, vì vậy tôi có thể hiểu việc sử dụng token để khuyến khích những người duy trì hệ thống.
+Vì vậy, tôi hy vọng rằng một hệ thống như vậy sẽ xuất hiện trong tương lai, có thể tính toán, lưu trữ và tài nguyên mạng một cách chính xác, sau đó định lượng chúng thành các token. Hơn nữa, quá trình này không cần sử dụng nhiều tài nguyên. có thể sử dụng mã thông báo. Sau khi mua các dịch vụ này, để đảm bảo chất lượng của dịch vụ, nhiều nhà cung cấp dịch vụ cũng có thể được sử dụng để tăng tỷ lệ trực tuyến thông qua cam kết và tương tự. Sau đó, các nhà cung cấp dịch vụ là người sử dụng khai thác khác nhau, vì vậy tôi cũng hy vọng rằng sẽ không có khai thác Trong trường hợp của pool, tóm lại, tình hình cụ thể phải đợi thứ này được thiết kế.
+
+# Tái bút
+Ban đầu tôi muốn nói về mối quan hệ giữa các hệ thống phân tán phi tập trung và thực tế, nhưng gần đây tôi lại mắc phải hội chứng đầu cuối và tất cả các hệ thống trong cơ thể tôi đang trở về trạng thái `` Tình trạng: Đã xuống cấp`, tôi hy vọng tôi không cho tôi 'Trạng thái: Ngoại tuyến một ngày nào đó. `Đó là 😂.
+Dù sao thì cũng vậy thôi, tôi sẽ viết ở đây trước.

@@ -16,7 +16,7 @@ title: Archives
 
 {% endif %} 
 
-- {{ post.date | date: "%Y/%m/%d" }} - [{{ post.title }}{% if post.layout == "encrypt" %} [加密] {% endif %}]({{ post.url }})    
+- {{ post.date | date: "%Y/%m/%d" }} - [{{ post.title }}{% if post.layout == "encrypt" %} [mã hóa] {% endif %}]({{ post.url }})    
 
 {% if forloop.last %} 
 {% else %}

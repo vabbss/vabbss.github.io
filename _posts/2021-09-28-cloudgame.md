@@ -1,25 +1,25 @@
 ---
-layout: post
-title: 云游戏的体验与感受
-tags: [云游戏, 体验]
+bố cục: bài
+title: Trải nghiệm và cảm giác chơi game trên đám mây
+tags: [trò chơi điện toán đám mây, trải nghiệm]
 ---
 
-  基础设施才是最重要的！<!--more-->    
-  
-# 起因
-  前段时间，米哈游出了《云·原神》的游戏。当时《原神》出的时候我就去试着玩了玩，不过被过于难的游戏主线剧情给劝退了，我打原神也只是对它的剧情和画面比较感兴趣。一年之后他们出了云游戏，其实我对云类型的东西还是挺感兴趣的，以前也写过关于[云手机](/2020/02/15/phone.html)和相关的[策划](/2020/03/01/plan.html) ~~（虽然策划是同学帮着写的😂）~~ 。因为我也觉得买很好的电子产品大多时候都是闲置的，利用率很低，通过云的管理方式可以降低成本和提高利用率。可惜我当时也只是因为体验了远程桌面才想着整云手机，并没有真正的体验一下，所以《云·原神》出的时候我就去抢名额了，结果没抢上😂，不过后来他们放宽了名额，我才真正的体验了这个所谓的云游戏。   
-  
-# 《云·原神》的体验
-  说实话效果还是挺不错的，首先云游戏最大的好处就是客户端很小，不需要下载很多东西，基本上可以做到即开即用，第一感觉很不错。接下来延迟的效果基本上和手机版的原神几乎一样，而且特效更好。不过因为宿舍带宽不太行，所以只是全特效，而不是高清。所以当天得到资格之后我就开始疯狂肝剧情，从打“公子”一路肝到刚前往稻妻。总体体验让我对云游戏产生了信心。不过《云·原神》是限时的，第一次登录会送5个小时的游玩时间，之后每天登录可以送15分钟，最高可以累计5个小时。所以以我的肝法，很快免费的游玩时间被我用光了。体验效果确实不错，但是问题在于手机端打原神真的很难受，即使效果不错，延迟很低，但是原生的原神在手机端的体验也很差劲，所以我在用完时间以后又开始体验新的云游戏平台。   
-  
-# 网易云游戏的体验
-  我在体验《云·原神》的过程中有时候也会看其他人对云游戏的体验，我发现很多人会拿《云·原神》和网易云游戏做对比，说米哈游还没网易良心，一天15分钟的时间啥都干不了（充钱？我游戏都不充钱，这个东西更不可能了）。所以我就试了试网易云游戏平台。   
-  之后我就去搜网易云游戏，发现他们很良心的一点就是允许直接使用浏览器就能玩，不需要下载客户端，这也就是说可以不限平台，假如我用ChromeBook也能随时感受到完整的电脑游戏体验，而且如果花钱的话价格还行，一小时最贵大概两块钱，如果是玩手机游戏就更便宜了，包月是一天一块钱。如果啥时候《云·原神》有电脑版，那一天两块钱的价格好像还行，只有手机版除了特效和一些体验还不如网易好，最起码网易是所有手游都能玩。   
-  所以最近几天我都在网易云游戏上体验，肝了三天把主线剧情打完了，然后继续打支线。不过玩过原神的人应该知道，原神有些支线任务很阴间，不好好天天肝或者氪金整人物好多任务都很难打。我昨天打“山中之物”的支线剧情时人给我打傻了，关卡难也就算了，正好当时同宿舍的人在看视频，我随便一打，延迟直接往1000ms上增，而且基本上只有画面动的多的时候才会上升。画质我已经调到最低了，但是根本玩不成，一波给我气傻了，于是没办法，我只好放弃，从此直到原神新的主线剧情出来我应该是不会再去碰它了。（不好说，闲了我可能会去打传说任务）   
-  
-# 对于云游戏的展望
-  在这次体验中，可以感受到云游戏的很多优势，我买1000块钱的笔记本电脑就可以享受和5000块钱的电脑相同的游戏体验，价格便宜很多，当然前提是网络很好。主要是可以用时收费，不像普通的电脑不用它已经花出去的钱也就那样，而且还会贬值。第二是即开即用，我可以不用下游戏，就和去网吧一样，想玩的游戏已经提前装好了，无论想玩哪一款游戏点开就能玩，很方便。第三就是多客户端，我在手机上正在进行的游戏随时可以无缝切换到电脑上面，可以让用户无论在手机、电脑、平板都能体验到相同的游戏效果。   
-  不过缺点也非常的明显，那就是**网络**真的是太痛苦了，网不好真的是没法玩，所以对于网络的优化无论是网络运营商还是云游戏服务商都需要付出足够的努力。不过目前来看，中国千兆普及率还是很低的，5G？5G就是个笑话，它能比光纤快？5G与互联网的连接都还是光纤呢。WiFi6不比它强？主要是5G覆盖率太低了，而且体验真的和4G没什么区别。所以以目前的网络水平，我暂时不看好云游戏。我不知道未来的网络能发展成什么样，能不能真正承载住极低的延迟和大量的数据。不过基本上大多数游戏只要延迟在100ms以内，人基本上都能接受，所以这其实不是技术难题，而是经济问题。只要什么时候千兆可以完全普及，我相信云游戏会很有前景的。
+Cơ sở hạ tầng là điều quan trọng nhất! <! - more ->
 
-# 奇思妙想
-  这正好让我联想到了PCDN，如果什么时候能出个PCC（P2P Cloud Computer），让附近闲置的高性能电脑给其他云游戏玩家做服务然后赚点小钱，想想也是个不错的选择呢。这样也能在一定程度上可以降低成本而且可以降低延迟吧，毕竟租机房还是挺贵的。
+# Nguyên nhân
+Một thời gian trước, Miha đã rời khỏi trò chơi "Cloud Original God". Vào thời điểm đó, tôi đã cố gắng chơi "The Protoss", nhưng tôi đã bị thuyết phục bởi cốt truyện chính quá khó của trò chơi, và tôi chỉ quan tâm đến cốt truyện và hình ảnh của nó. Một năm sau, họ phát hành trò chơi đám mây. Trên thực tế, tôi vẫn rất quan tâm đến những thứ thuộc loại đám mây. Tôi đã viết về [云 手机] (/ 2020/02/15 / phone.html) và [lập kế hoạch] liên quan (/ 2020/03/01 / plan.html) ~~ (Mặc dù kế hoạch được viết bởi các sinh viên với sự giúp đỡ của 😂) ~~. Bởi vì tôi cũng nghĩ rằng phần lớn thời gian mua hàng điện tử tốt là nhàn rỗi, hiệu suất sử dụng rất thấp, và phương pháp quản lý đám mây có thể giảm chi phí và tăng hiệu suất sử dụng. Thật tiếc khi tôi chỉ nghĩ về điện thoại di động đám mây vì tôi đã trải nghiệm máy tính để bàn từ xa và tôi không thực sự trải nghiệm nó. Vì vậy, khi "Cloud Protoss" được phát hành, tôi đã tìm hiểu kỹ, nhưng không hiểu. 😂, nhưng sau đó họ Sau khi nới lỏng hạn ngạch, tôi thực sự trải nghiệm cái gọi là trò chơi đám mây này.
+
+# Trải nghiệm của "Cloud: Original God"
+Thành thật mà nói, hiệu quả mang lại là khá tốt, trước hết, ưu điểm lớn nhất của trò chơi đám mây là client rất nhỏ và không cần tải nhiều thứ, về cơ bản là có thể sử dụng hết. cảm giác đầu tiên là rất tốt. Hiệu ứng của lần trì hoãn tiếp theo về cơ bản giống với phiên bản di động của Thần điêu đại hiệp, các hiệu ứng đặc biệt tốt hơn. Tuy nhiên, do băng thông của KTX không tốt nên chỉ toàn hiệu ứng đặc biệt chứ không có độ nét cao. Vì vậy sau khi đạt được trình độ ngày hôm đó, tôi bắt đầu âm mưu gan ruột điên cuồng, từ chơi hết "Thiếu gia" đến chỉ đi gặp Đào phu nhân. Trải nghiệm tổng thể mang lại cho tôi sự tự tin khi chơi game trên đám mây. Tuy nhiên, "Cloud Original God" có giới hạn thời gian. Bạn sẽ nhận được 5 giờ chơi khi đăng nhập lần đầu tiên và bạn sẽ nhận được 15 phút chơi mỗi ngày sau khi đăng nhập và bạn có thể tích lũy đến 5 giờ. Vậy là với phương pháp chơi gan của mình, chẳng mấy chốc tôi đã hết thời gian chơi rảnh rỗi. Hiệu ứng trải nghiệm thực sự rất tốt, nhưng vấn đề là việc chơi Thần nguyên bản trên điện thoại di động thực sự không thoải mái, cho dù hiệu ứng tốt nhưng độ trễ rất thấp, trải nghiệm Thần nguyên bản trên điện thoại di động là cũng rất kém, vì vậy tôi bắt đầu trải nghiệm cái mới sau khi hết thời gian. Nền tảng trò chơi đám mây.
+
+# Trải nghiệm trò chơi trên đám mây NetEase
+Trong quá trình trải nghiệm "Cloud Original God", thỉnh thoảng tôi có xem trải nghiệm trò chơi trên đám mây của người khác, tôi thấy có nhiều người so sánh "Cloud Original God" với các trò chơi trên đám mây của NetEase, nói rằng Mihayou không có lương tâm, tôi không thể làm bất cứ điều gì trong 15 phút mỗi ngày (nạp tiền? Tôi không tính phí cho game, điều này càng không thể). Vì vậy, tôi đã thử nền tảng chơi game đám mây NetEase.
+Sau đó, tôi đã tìm kiếm NetEase Cloud Games và thấy rằng họ rất tận tâm khi cho phép bạn chơi trực tiếp bằng trình duyệt mà không cần tải xuống ứng dụng khách. Điều này có nghĩa là không có giới hạn đối với nền tảng. Nếu tôi sử dụng ChromeBook, tôi có thể cảm nhận sự trọn vẹn bất cứ lúc nào. Trải nghiệm trò chơi trên máy tính rất tốt, bỏ tiền ra thì giá cả cũng ổn. Đắt nhất khoảng hai tệ một giờ. Nếu chơi trò chơi di động thì còn rẻ hơn hàng tháng. đăng ký là một nhân dân tệ một ngày. Nếu có phiên bản máy tính của "Cloud Original God", giá hai đô một ngày xem ra cũng được, chỉ có phiên bản di động thì không bằng NetEase ngoại trừ hiệu ứng đặc biệt và một số trải nghiệm. Ít nhất thì NetEase chơi được tất cả di động Trò chơi.
+Vì vậy những ngày qua mình đã trải nghiệm trên game đám mây của NetEase, sau ba ngày thì mình hoàn thành phần ngoại truyện chính, sau đó tiếp tục chơi phần phụ bản. Tuy nhiên, những ai đã chơi thần tiên nguyên bản hẳn cũng biết rằng một số nhiệm vụ phụ bản thần binh nguyên bản mang tính thế giới ngầm rất cao, chơi nhiều nhiệm vụ nếu không tốt gan hay vàng krypton hàng ngày sẽ rất khó. Hôm qua, khi tôi đang chơi câu chuyện bên lề của "Những điều trên núi", tôi đã bị sững sờ và mức độ khó khăn, tình cờ thấy những người ở cùng ký túc xá đang xem video. Tôi đã chơi nó một cách tình cờ. Độ trễ tăng trực tiếp lên 1000ms, và về cơ bản Chỉ khi màn hình di chuyển nhiều thì nó mới tăng lên. Tôi đã chỉnh chất lượng hình ảnh xuống mức thấp nhất, nhưng không chơi được chút nào. Làn sóng giận dữ khiến tôi trở nên ngu ngốc, vì vậy tôi chỉ còn cách từ bỏ. Từ đó tôi không nên đụng đến nó nữa cho đến khi cốt truyện chính mới của vị thần ban đầu xuất hiện. (Thật khó nói, tôi có thể sẽ đi làm nhiệm vụ huyền thoại khi rảnh rỗi)
+
+# Triển vọng cho trò chơi trên đám mây
+Trong trải nghiệm này, tôi có thể cảm nhận được nhiều ưu điểm của trò chơi trên đám mây. Tôi có thể tận hưởng trải nghiệm chơi game giống như một máy tính 5.000 nhân dân tệ với một máy tính xách tay 1.000 nhân dân tệ. Giá rẻ hơn nhiều. Tất nhiên, tiền đề là mạng tốt. Lý do chính là nó có thể bị tính phí khi sử dụng, không giống như máy tính thông thường không sử dụng tiền đã bỏ ra và nó cũng sẽ mất giá. Thứ hai là nó đã sẵn sàng sử dụng, không cần tải game mà cứ như ra quán Internet, game muốn chơi đã được cài đặt từ trước rồi, muốn chơi game nào thì chơi. có thể chơi nó bằng cách nhấp vào nó, rất thuận tiện. Thứ ba là đa ứng dụng, trò chơi tôi đang chơi trên điện thoại di động có thể được chuyển sang máy tính liên tục bất cứ lúc nào, cho phép người dùng trải nghiệm cùng một hiệu ứng trò chơi bất kể điện thoại di động, máy tính hay máy tính bảng.
+Tuy nhiên, khuyết điểm cũng rất dễ thấy, đó là ** mạng ** thực sự quá nhức nhối, nếu mạng không tốt thì thực sự không thể chơi được, chính vì vậy, cả nhà mạng và nhà cung cấp dịch vụ game đám mây đều cần để trả đủ cho việc tối ưu hóa mạng. nỗ lực. Nhưng hiện tại, tỷ lệ thâm nhập Gigabit của Trung Quốc vẫn rất thấp, 5G? 5G là một trò đùa, nó có thể nhanh hơn cáp quang? Kết nối giữa 5G và Internet vẫn là cáp quang. Có phải WiFi6 không tốt hơn nó? Nguyên nhân chính là vùng phủ sóng 5G quá thấp, và trải nghiệm thực sự không khác gì 4G. Vì vậy, với mức độ mạng hiện tại, tôi không mấy lạc quan về trò chơi đám mây trong thời điểm hiện tại. Tôi không biết mạng trong tương lai có thể phát triển thành gì, liệu nó có thực sự mang lại độ trễ cực thấp và một lượng lớn dữ liệu hay không. Nhưng về cơ bản hầu hết các trò chơi chỉ cần độ trễ trong vòng 100ms là về cơ bản mọi người có thể chấp nhận được, vì vậy đây không phải là vấn đề kỹ thuật, mà là vấn đề kinh tế. Miễn là Gigabit có thể được phổ biến hoàn toàn, tôi tin rằng chơi game trên đám mây sẽ rất hứa hẹn.
+
+# Tuyệt vời
+Điều này làm tôi nhớ đến PCDN. Nếu có một PCC (Máy tính đám mây P2P) cho phép các máy tính hiệu suất cao nhàn rỗi gần đó phục vụ những người chơi trò chơi đám mây khác và kiếm được một ít tiền, thì đó sẽ là một lựa chọn tốt để suy nghĩ về nó. Điều này cũng có thể làm giảm chi phí và sự chậm trễ ở một mức độ nhất định.

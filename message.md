@@ -1,9 +1,9 @@
---- 
-layout: post
-title: 留言板
-date: 2018-10-14
-tags: [留言板] 
-id: message
+---
+bố cục: bài
+tiêu đề: bảng tin
+ngày: 2018-10-14
+tags: [bảng tin]
+id: tin nhắn
 ---
 
-欢迎来到Mayx的博客，你可以在这里畅所欲言。
+Chào mừng bạn đến với blog của Mayx, nơi bạn có thể thoải mái trò chuyện.

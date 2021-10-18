@@ -1,18 +1,17 @@
 ---
-layout: post
-title: 自制一个简单的微信聊天机器人
-tags: [微信, 聊天, 机器人, PHP]
+bố cục: bài
+title: Tạo một chatbot WeChat đơn giản
+tags: [WeChat, trò chuyện, rô bốt, PHP]
 ---
+Tôi cảm thấy rằng API có vẻ khá thú vị <! - more ->
 
-  感觉API好像还挺有意思<!--more-->    
-  
-# 起因
-  前两天我[制作了Server酱·TurboMini版](/2021/02/02/serverchan.html)之后感觉微信公众号的API好像还挺有意思的，总的来说也不是很复杂，没有用什么特别奇怪的东西，而且文档还算清晰，这一点还是很不错的。   
-  于是最近我就开始看微信开放文档，其实我刚写完Server酱·TurboMini版之后我就在想，好多人在QQ上搞那种只要说来点什么图，机器人就会发图片的一个功能。我感觉这个好像有点意思，因为我平时用微信更多一些，既然有测试号这样好的平台，那么我就应该搞点这样的功能。   
-  我花了一天的时间通读整个文档然后把程序写了出来，然而发生了很糟糕的事情，那就是微信被动回复的时间要求必须在5秒以内，否则就会报错，然而让服务器转发图片本来就很耗时，又加上我用的是垃圾国外免费的虚拟空间，中国与国际互联网的连接又很差劲，导致5秒内程序必定不可能来得及回复。   
-  没办法，我花了一天时间写的东西，我一定要水一篇文章！所以我想了想，干脆写成聊天机器人吧，那个东西也简单，像我博客上的伊斯特瓦尔就用了聊天机器人（有现成的API啥都好搞）。于是我稍微改动了一下代码，把发图机器人改成了聊天机器人。   
+# Nguyên nhân
+Hai ngày trước, tôi [đã tạo Server Sauce · TurboMini Edition] (/ 2021/02/02 / serverchan.html) và cảm thấy rằng API của tài khoản chính thức WeChat có vẻ khá thú vị. Nói chung, nó không phức tạp lắm. và nó là vô ích. Những điều rất lạ, và tài liệu khá rõ ràng, vẫn còn rất tốt.
+Vì vậy, gần đây tôi bắt đầu đọc các tài liệu mở WeChat. Thực tế, sau khi tôi viết xong Phiên bản Server Sauce · TurboMini, tôi đã nghĩ rằng nhiều người có một tính năng trên QQ cho phép robot gửi ảnh miễn là họ nói điều gì đó. . Tôi nghĩ điều này có vẻ hơi thú vị, vì tôi thường sử dụng WeChat hơn. Vì có một nền tảng tốt như tài khoản thử nghiệm, thì tôi nên phát triển một số chức năng như vậy.
+Tôi đã dành một ngày để đọc toàn bộ tài liệu và sau đó viết chương trình. Tuy nhiên, một điều khủng khiếp đã xảy ra, đó là thời gian cần thiết cho phản hồi thụ động của WeChat phải trong vòng 5 giây, nếu không sẽ báo lỗi. Tuy nhiên, hãy để máy chủ chuyển tiếp Hình ảnh. Rất mất thời gian và tôi đang sử dụng không gian ảo không có rác ở nước ngoài và kết nối giữa Trung Quốc và Internet rất kém khiến chương trình không thể trả lời trong vòng 5 giây.
+Không thể nào, tôi đã dành một ngày để viết một cái gì đó, tôi phải tưới một bài báo! Vì vậy, tôi nghĩ về nó, chỉ cần viết nó là một bot trò chuyện, điều đó rất đơn giản, như Istval trên blog của tôi, tôi sử dụng một bot trò chuyện (với các API làm sẵn, mọi thứ đều dễ dàng thực hiện). Vì vậy, tôi đã thay đổi mã một chút và thay đổi rô bốt chia sẻ hình ảnh thành rô bốt trò chuyện.
 
-# 代码
+# Mã số
 ```php
 <?php
 $appid=微信appID;
@@ -59,12 +58,12 @@ echo 'error';
 }
 ```
 
-# 使用方法
-  和[上一篇文章](/2021/02/02/serverchan.html)一样，同样需要去[申请](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)一个测试号，不过有一点不一样，那就是这一次需要配置接口配置信息，URL就填这个程序能在互联网上访问的地址，而Token则是填mayx。为什么呢？因为我在代码里这样写的啊……如果想改可以把对应的变量改成自己喜欢的值，总之保证两边一样就行。   
-  提交之后接口就配置好了，不过还没有结束，为了能使用机器人，还得要去注册[图灵机器人](http://www.turingapi.com/)，毕竟又不可能自己去写一个聊天机器人，那个需要的资源太多了。现在那个图灵机器人好像必须要实名才能用，那总之混互联网的人遇到这种问题应该也不是问题了吧。   
-  注册好机器人之后就直接把APIKey粘到代码里面，然后整个代码就可以正常运行了，现在你就可以和你的机器人聊天了。   
-  
-# 暂时废弃的代码
+# Hướng dẫn
+Tương tự như [bài viết trước] (/ 2021/02/02 / serverchan.html), bạn cũng cần truy cập [ứng dụng] (https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t = sandbox / login) là mã số thử nghiệm, nhưng có một điểm khác biệt, đó là lần này bạn cần cấu hình thông tin cấu hình giao diện URL là địa chỉ mà chương trình này có thể truy cập trên Internet và Token là mayx. tại sao? Bởi vì tôi đã viết nó như thế này trong đoạn mã ... Nếu bạn muốn thay đổi, bạn có thể thay đổi biến tương ứng thành giá trị yêu thích của bạn, tóm lại, chỉ cần đảm bảo rằng cả hai bên đều giống nhau.
+Giao diện được cấu hình sau khi gửi nhưng vẫn chưa kết thúc, để sử dụng robot, bạn phải đăng ký [Turing Robot] (http://www.turingapi.com/), dù sao thì không thể viết được một cuộc trò chuyện của chính bạn Robot, đòi hỏi quá nhiều tài nguyên. Giờ đây, rô bốt Turing dường như phải có tên thật để có thể sử dụng nó, vì vậy sẽ không có vấn đề gì đối với những người hòa nhập với Internet gặp phải loại vấn đề này.
+Sau khi đăng ký rô bốt, hãy dán trực tiếp APIKey vào mã và sau đó toàn bộ mã có thể chạy bình thường và bây giờ bạn có thể trò chuyện với rô bốt của mình.
+
+# Mã tạm thời lỗi thời
 ```php
 define('MULTIPART_BOUNDARY', '--------------------------'.microtime(true));
 
@@ -92,14 +91,14 @@ echo '<xml>
   </Image>
 </xml>';
 ```
-  其实这段代码不是不能工作，只是它不能符合要求，没办法及时的把图片上传到微信服务器上，也没办法及时回复……也许如果有很好的条件，这段代码就可以运行了吧……   
-  我也试过如果不是Pixiv上面的图片，而是图片在很小而且也很快的服务器上时，这个代码是能运行的。
-  
-# 替代的方案
-  我看完文档之后好像也没有主动向用户发送信息的接口，只有被动发送的，那这5秒问题估计是没法解决了吧……不过我看网上说如果用客服接口好像就没有这样的限制，总之我回头试试看吧。   
-  另外我也想了几种方案：
-  1. 每天定时向微信服务器上传图片，需要时只发送ID，不再在得到请求时再上传。   
-  2. 设置2条命令，一条用于向微信服务器上传，另一条负责取回。不过这样有个问题就是ID不太好传，可能还得缓存一下，其实上面那个一样也得缓存。   
-  3. 搞成图文形式，每天定时发送，就像日报一样    
-  
-  目前大概就想出这么多，更多的睡起来再慢慢想吧~
+Thực ra đoạn mã này không hoạt động, nhưng không đạt yêu cầu, không có cách nào tải hình lên máy chủ WeChat kịp thời, và cũng không có cách nào trả lời kịp thời ... Có thể nếu có điều kiện tốt , mã này có thể chạy ...…
+Tôi cũng đã thử rằng nếu nó không phải là hình ảnh trên Pixiv, nhưng hình ảnh trên một máy chủ nhỏ và nhanh, thì mã này có thể chạy.
+
+# Kế hoạch thay thế
+Sau khi mình đọc tài liệu thì thấy dường như không có giao diện nào để chủ động gửi thông tin đến người dùng, chỉ bị động, thì vấn đề 5 giây chắc là không thể giải quyết được ... Nhưng mình nghĩ nếu bạn sử dụng giao diện dịch vụ khách hàng thì dường như không có hạn chế như vậy. Dù sao, hãy để tôi thử nó sau.
+Ngoài ra, tôi cũng nghĩ đến một số lựa chọn:
+1. Tải ảnh lên máy chủ WeChat đều đặn hàng ngày và chỉ gửi ID khi cần thiết, không tải ảnh lên khi được yêu cầu.
+2. Thiết lập 2 lệnh, một để tải lên máy chủ WeChat và lệnh kia để truy xuất. Tuy nhiên, vấn đề là ID không dễ truyền và có thể phải cache, thực ra cái trên cũng cần cache.
+3. Tạo một định dạng đồ họa và gửi nó đều đặn hàng ngày, giống như một tờ báo hàng ngày
+
+Tôi đã nghĩ về rất nhiều cho đến nay, ngủ nhiều hơn và sau đó suy nghĩ về nó từ từ ~

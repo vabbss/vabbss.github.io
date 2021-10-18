@@ -1,22 +1,22 @@
 ---
-layout: post
-title: 记一次线下的信息安全比赛
-tags: [CTF, 渗透, 信息安全]
+bố cục: bài
+title: Ghi một trò chơi bảo mật thông tin ngoại tuyến
+các thẻ: [CTF, thâm nhập, bảo mật thông tin]
 ---
 
-  感觉还是现实中的渗透有意思……<!--more-->    
-  
-# 起因
-  近些年来，我体验过[线上的CTF](/2019/12/16/ctf.html)，也体验过[成为CTF的举办方](/2020/11/24/createctf.html)，但是由于各种各样的原因，我没有参加过线下的这种信息安全比赛。正好最近四川某学校组织了一场线下的信息安全比赛，我们学校就让我和同学们去参加了。   
-  在我们的队伍中，除了我之外，其他人都是信息安全专业的，这让我这个网络工程的人怎么办😂。不过好歹我还[发现过漏洞](/2021/05/15/vulnerability.html)，[自制过网站引擎](/2019/07/01/mabbs.html)，也在维护网站的过程中[对网络攻防有一定的了解](/2019/02/17/break.html)，加上上面的经验，至少我在知识面上还是能和信息安全专业的人比较的吧。   
+Tôi vẫn cảm thấy rằng việc thâm nhập vào thực tế rất thú vị ... <! - more ->
 
-# 体验与过程
-  在这次比赛中有两部分的内容，第一部分是CTF，第二部分是内网渗透。除此之外线下和线上的区别有一点就是每个队伍会单独给靶机，听说Flag好像有些题也是唯一的。另外有一个挺大的区别就是线下的电脑不允许联网，包括手机信号也会屏蔽。不过据说貌似屏蔽的只有4G以下的信号和2.4G的WiFi信号与蓝牙信号，5G移动网络和5GWiFi并没有受到影响，另外也提供一台可联网的电脑可以限时查资料。所以这整的我就有点看不懂这个操作了。另外我通过社工的办法偷偷的整到了他们校园网的密码，所以其实我可以正常连接到互联网。   
-## CTF部分
-  虽然我玩过CTF，但是实际上我对CTF还是一窍不通，Crypto部分的题看不懂，也不知道用什么工具，Misc题简直就是感觉能做可惜工具不够。Web题还好，至少会一点但是我还是不会SQL注入。其他什么Pwn会用Reverse之类的题就基本上和我们无缘了，反正我们小组的人都不会，另外也没工具。   
-  其实说实话我到现在为止，都看不出来CTF在现实生活中有什么用，逆向和Web可能有点用，Crypto这种来个正常点的AES加密能有人不靠暴力破解？还有Misc那种是在考验什么？脑筋急转弯吗？我原创个加密算法就是有漏洞能有人会解？   
-  总之CTF感觉其实意思不大，不过说是那么说呢，我也还是分享些我能做出来然后有点意思的题吧。   
-  在这次的Web题里面有一个挺有意思的就是MD5和它自身相等的一个题。不过目前貌似以人类的科技还没有找出这样的值。大概代码就是这样：   
+# Nguyên nhân
+Trong những năm gần đây, tôi đã trải qua [CTF trực tuyến] (/ 2019/12/16 / ctf.html) và [trở thành người tổ chức CTF] (/ 2020/11/24 / createctf.html), nhưng vì nhiều lý do khác nhau, tôi chưa tham gia cuộc thi offline an toàn thông tin kiểu này. Gần đây, một trường học ở Tứ Xuyên đã tổ chức một cuộc thi ngoại tuyến về bảo mật thông tin, và trường chúng tôi đã yêu cầu tôi và các bạn cùng lớp tham gia.
+Trong nhóm của chúng tôi, ngoại trừ tôi, những người khác đều chuyên nghiệp về bảo mật thông tin. Tôi nên làm gì với tư cách là một người kỹ thuật mạng😂? Nhưng dù sao đi nữa, tôi đã [tìm thấy lỗ hổng] (/ 2021/05/15 / lỗ hổng.html), [công cụ trang web tự tạo] (/ 2019/07/01 / mabbs.html) và tôi cũng đang trong quá trình này bảo trì trang web [phải Có hiểu biết nhất định về tấn công và phòng thủ mạng] (/ 2019/02/17 / break.html), cộng với kinh nghiệm trên, ít nhất tôi vẫn có thể so sánh với các chuyên gia an toàn thông tin về mặt kiến ​​thức.
+
+# Kinh nghiệm và quá trình
+Cuộc thi này có hai phần, phần thứ nhất là CTF và phần thứ hai là thâm nhập mạng nội bộ. Ngoài ra, sự khác biệt giữa ngoại tuyến và trực tuyến là mỗi đội sẽ cung cấp máy bay không người lái riêng biệt. Tôi nghe nói rằng Flag có vẻ như có một số câu hỏi độc đáo. Một điểm khác biệt lớn nữa là các máy tính ngoại tuyến không được phép kết nối Internet và tín hiệu điện thoại di động cũng bị chặn. Tuy nhiên, người ta nói rằng chỉ các tín hiệu dưới 4G và tín hiệu WiFi 2.4G và tín hiệu Bluetooth dường như bị che chắn. Mạng di động 5G và WiFi 5G không bị ảnh hưởng. Ngoài ra, có thể cung cấp một máy tính có kết nối Internet để kiểm tra dữ liệu trong thời gian giới hạn . Vì vậy, tôi chỉ không thể hiểu hoạt động này. Ngoài ra, tôi đã bí mật đặt mật khẩu của mạng trong khuôn viên trường của họ thông qua các nhân viên xã hội, vì vậy tôi thực sự có thể kết nối Internet bình thường.
+## Phần CTF
+Mặc dù tôi đã chơi CTF nhưng thực sự thì tôi vẫn chưa biết gì về CTF, tôi không hiểu về phần Crypto và cũng không biết sử dụng công cụ gì. Misc chỉ tiếc là tôi có thể làm được và các công cụ là không đủ. Câu hỏi trên web không sao, ít nhất là một chút nhưng tôi vẫn chưa biết SQL injection. Những gì Pwn khác sẽ sử dụng Reverse và những câu hỏi khác về cơ bản không có cơ hội với chúng tôi, dù sao thì những người trong nhóm của chúng tôi sẽ không biết, và cũng không có công cụ.
+Trên thực tế, thành thật mà nói, tôi chưa thấy CTF nào được sử dụng trong đời thực cho đến bây giờ. Reverse và Web có thể hữu ích. Ai đó có thể sử dụng mã hóa AES bình thường như Crypto để bẻ khóa nó mà không bạo lực không? Và thử nghiệm Misc là gì? Vấn đề phức tạp? Thuật toán mã hóa ban đầu của tôi có lỗ hổng. Ai đó có thể giải quyết nó không?
+Tóm lại, CTF không thực sự có nhiều ý nghĩa, nhưng nếu bạn nói vậy, hãy để tôi chia sẻ một số câu hỏi thú vị mà tôi có thể đưa ra.
+Một trong những câu hỏi thú vị nhất trong câu hỏi web này là MD5 bằng chính nó. Tuy nhiên, có vẻ như công nghệ của con người vẫn chưa tìm ra được giá trị như vậy. Có thể mã là như thế này:
 ```php
 <?php
 include 'flag.php';
@@ -28,7 +28,6 @@ if(isset($_GET["a"])){
   }
 }
 ```
-  虽然和原题不太一样，不过大概意思就是这个意思。我看到之后最先想到的就是去百度找有没有这样的值，不过最后似乎发现人类还没找到。接下来我就去搜php中MD5常见的漏洞，最终发现就是在使用“==”判断的时候如果说后面的md5是“0e+一串数字”，PHP就会认为它是0。我本来想找0e开头的md5也为0e的，但是垃圾百度怎么找都只会找到像“QNKCDZO”这种垃圾值。那算了，反正知道原理了我就直接自己写一个脚本算吧，脚本内容如下：   
 ```python
 from hashlib import md5
 for i in range(1,999999999):
@@ -40,19 +39,19 @@ for i in range(1,999999999):
         except:
             aaa = 0
 ```
-  因为时间比较紧张，所以就随便写了一下，反正能用就行。最终算出来第一个值是“0e215962017”，然后就可以了，因为它的md5是“0e291242476940776845150308577824”，对于PHP来说相当于“0 = 0”。垃圾百度真的是除非直接搜这个值才能出现少量的结果，其他真的是怎么都搜不到……   
-  其他题我都不会做，CTF就到这里吧。   
-## 内网渗透部分
-  内网渗透相比CTF来说还是有点意思，尤其对我这种网络工程的人来说至少各种连接还是比较容易的。而且其实吧我也是在现实中玩过渗透的，像学校网络都比比赛中的网络渗透起来简单。另外我也写过[任意连接两个网络](/2021/05/07/ssh.html)的文章，所以这一部分我做起来就会更加得心应手一些。   
-  不过通过这次比赛，我还是发现比赛本身并没有多大意义，比如说我们比赛的时候进入的入口是一个叫做beescms的CMS，然而比赛举办方也不给代码，让我们盲猜，这倒也不是不行，在这个CMS的很多地方都能看到有可能会被SQL注入的点，然而我们队伍用了很多办法试都失败了。最后才在百度上找到[一篇文章](https://www.anquanke.com/post/id/98574)说可以直接在主页POST一串：
-```
-_SESSION[login_in]=1&_SESSION[admin]=1&_SESSION[login_time]=99999999999
-```
-  这样的东西就可以直接修改Session绕过登录😓……我TM这东西不审计能找到这种漏洞？最终才成功在上面找到了4个flag然后进入下一个内网。   
-  在下一个内网里面有两个MySQL数据库和一个Tomcat网站，另外还有一个网站上面写着后台管理但是看不出来是什么框架的。根据提示说那个Tomcat和数据库都是弱口令，最后猜出来Tomcat的用户名是“tomcat”，密码是“tomcat123”。数据库有个问题是我们能成功登录，但是相关的工具不知道咋回事连不上代理……我因为不是信息安全的所以没有什么工具，那个有工具的全局代理坏掉了，不知道为啥连不上……所以没办法……另外那个数据库进去之后竟然也不给个flag也真是够小气的，估计flag是在文件系统里面吧，听说用UDF提权就可以。Tomcat是进入第二层网络的跳板，我在上面搭了两层代理之后就可以进去那个网络了。在那个网络中有一个PHPOA的系统、一个Weblogic的网站和一个应该是Windows7的系统。 ~~看起来只开了SMB的端口，感觉好像应该是用永恒之蓝打……~~（听大佬说好像是用IPC$？）不过具体的因为队友的工具连不上……所以就没办法。   
-  PHPOA的那个资料不多，不过我还是通过百度搜到了[相关资料](https://blog.csdn.net/weixin_39788986/article/details/110226286)说`/ntko/upLoadOfficeFile.php`这个路径有个任意文件上传的漏洞，我人麻了，这不给代码不给网络我难不成靠先知知道这个漏洞？   
-  Weblogic那个网上虽然搜到了教程，说可以用`/console/css/%252e%252e%252fconsole.portal`这个地址直接跳过登录，但是我没怎么用过那个平台不知道怎么部署也不知道怎么改密码所以最后也失败了……   
-  到最后成绩还不错，做了6道题，给了1k多分，还拿了一个一血和二血。   
-  
-# 总结
-  最后比赛结束成绩还可以，我们队拿了个三等奖。不过这次比赛之后我发现还是在现实中去破解个认证啊啥的比CTF有用多了，去真实的环境搞渗透比在比赛中有意思多了，所以真想玩就在现实中玩吧。当然对于这次机会我感觉也是有意思的，通过Flag的方式在一定程度上来说能给我带来些乐趣，也是挺不错的经历了。
+Vì thời gian eo hẹp nên tôi chỉ viết tùy tiện thôi, dù sao cũng có tác dụng. Cuối cùng, giá trị đầu tiên được tính là "0e215962017", và sau đó là ổn, vì md5 của nó là "0e291242476940776845150308577824", tương đương với "0 = 0" đối với PHP. Baidu rác rưởi thực sự chỉ có thể tìm thấy một lượng nhỏ kết quả trừ khi bạn trực tiếp tìm kiếm giá trị này. Những người khác thực sự không thể tìm kiếm được ...
+Tôi không biết làm thế nào để làm bất kỳ câu hỏi nào khác, vì vậy chúng ta hãy dừng lại ở đây cho CTF.
+## Phần thâm nhập mạng nội bộ
+Việc thâm nhập Intranet vẫn có một chút thú vị so với CTF, đặc biệt là đối với những người làm kỹ thuật mạng như tôi, ít nhất tất cả các loại kết nối đều tương đối dễ dàng. Và trên thực tế, tôi cũng đã chơi thâm nhập trong thực tế, ví dụ như mạng trường học dễ thâm nhập hơn mạng trong các cuộc thi. Ngoài ra, tôi cũng đã viết một bài về [Kết nối hai mạng bất kỳ] (/ 2021/05/07 / ssh.html), vì vậy phần này sẽ thuận tiện hơn cho tôi.
+Tuy nhiên, qua cuộc thi này, tôi vẫn thấy rằng bản thân cuộc thi không có nhiều ý nghĩa, ví dụ như cổng vào mà chúng tôi vào trong cuộc thi là một CMS có tên là beecms, tuy nhiên, ban tổ chức cuộc thi lại không đưa ra mã số cho chúng tôi. đoán một cách mù quáng. Điều này không đúng. Không, ở nhiều nơi trong CMS này, chúng tôi có thể thấy những điểm có thể bị SQL chèn vào, nhưng nhóm của chúng tôi đã thử nhiều cách và không thành công. Cuối cùng, tôi đã tìm thấy [một bài báo] (https://www.anquanke.com/post/id/98574) trên Baidu và nói rằng bạn có thể trực tiếp đăng một chuỗi trên trang chủ:
+``
+_SESSION [login_in] = 1 & _SESSION [admin] = 1 & _SESSION [login_time] = 99999999999
+``
+Một thứ như vậy có thể trực tiếp sửa đổi Phiên để bỏ qua đăng nhập 😓 ...... Tôi có thể tìm thấy loại lỗ hổng này mà không cần kiểm tra thứ này không? Cuối cùng, tôi đã tìm thành công 4 cờ trên đó và vào mạng nội bộ tiếp theo.
+Trong mạng nội bộ tiếp theo, có hai cơ sở dữ liệu MySQL và một trang web Tomcat, cũng có một trang web với phần quản lý nền được viết trên đó, nhưng không thể nhìn thấy khuôn khổ nào. Theo lời nhắc, Tomcat và cơ sở dữ liệu là mật khẩu yếu, và cuối cùng đoán rằng tên người dùng Tomcat là "tomcat" và mật khẩu là "tomcat123". Vấn đề với cơ sở dữ liệu là chúng tôi có thể đăng nhập thành công, nhưng các công cụ liên quan không thể kết nối với proxy ... Tôi không có bất kỳ công cụ nào vì tôi không bảo mật thông tin. Proxy toàn cầu với các công cụ bị hỏng, Tôi không biết tại sao Nó không thể kết nối ... vì vậy không có cách nào ... Ngoài ra, thực sự rất keo kiệt khi không đưa ra cờ sau khi cơ sở dữ liệu vào. Người ta ước tính rằng cờ nằm ​​trong hệ thống tệp Tôi nghe nói rằng UDF có thể được sử dụng để nâng cao quyền. Tomcat là bàn đạp để vào lớp thứ 2. Sau khi thiết lập hai lớp tác nhân trên đó, tôi có thể vào mạng đó. Trong mạng đó, có một hệ thống PHPOA, một trang Weblogic và một hệ thống phải là Windows7. ~~ Có vẻ như chỉ có cổng SMB được mở, và có vẻ như nó nên được chơi với Eternal Blue ... ~~ (Tôi nghe ông lớn nói rằng có vẻ như đang sử dụng IPC $?) Nhưng cụ thể là vì công cụ của đồng đội không thể kết nối ... không có cách nào.
+Không có nhiều thông tin về PHPOA, nhưng tôi vẫn tìm thấy [thông tin liên quan] (https://blog.csdn.net/weixin_39788986/article/details/110226286) thông qua Baidu, nói rằng có một đường dẫn trong `/ ntko / upLoadOfficeFile .php` Lỗ hổng do upload file tùy tiện khiến tôi tê cả người, nếu cái này không cho code hay mạng thì tôi có thể dựa vào tiên tri để biết được lỗ hổng này không?
+Mặc dù tôi đã tìm thấy một hướng dẫn trên trang web Weblogic, tôi đã nói rằng tôi có thể sử dụng địa chỉ `/ console / css /% 252e% 252e% 252fconsole.portal` để bỏ qua đăng nhập trực tiếp, nhưng tôi chưa sử dụng nền tảng đó nhiều. Tôi không biết cách triển khai hay cách thay đổi mật khẩu. Mật khẩu nên cuối cùng không thành công ...
+Cuối cùng kết quả cũng không tồi, mình làm được 6 câu, cho hơn 1k điểm, còn có máu thứ nhất và máu thứ hai.
+
+# Tổng hợp
+Kết thúc trò chơi, kết quả không tồi, đội chúng tôi đã xuất sắc giành giải ba. Nhưng sau cuộc thi này, mình thấy việc thi lấy chứng chỉ trong thực tế sẽ hữu ích hơn CTF, việc thâm nhập vào môi trường thực tế thú vị hơn rất nhiều so với cuộc thi, vì vậy nếu bạn thực sự muốn chơi thì cứ chơi trong thực tế. Tất nhiên, tôi nghĩ cơ hội này cũng thú vị, ở một mức độ nào đó, nó có thể mang lại cho tôi một chút thú vị thông qua phương pháp Đánh Cờ, đây cũng là một trải nghiệm khá hay.

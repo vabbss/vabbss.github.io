@@ -8,21 +8,21 @@ tags: [links]
 
 | Links | Introduce |
 | - | - |
-| [花火学园](https://www.say-huahuo.com/) | 和谐融洽的ACG交流以及资源聚集地 |
-| [贫困的蚊子](https://blog.qwq.moe/) | *No description* |
-| [极客兔兔](https://geektutu.com/) | 致力于分享有趣的技术实践 |
-| [维基萌](https://www.wikimoe.com/) | 萌即是正义！一名热爱acg的前端设计师的小站！ |
-| [7gugu's blog](https://www.7gugu.com/) | 一个用来存放我爱好的地方,编程,摄影之类的空间 |
-| [云游君](https://www.yunyoujun.cn) | 希望能成为一个有趣的人。 |
-| [Angelic47's Home](https://www.angelic47.com/) | 依露娜・安琦四七・雪绪 - 能够战斗的公主姐姐 |
-| [探索子](https://beyondstars.xyz/) | 迈向未知·探索边界 |
+| [Học viện pháo hoa](https://www.say-huahuo.com/) | Nơi thu thập tài nguyên và giao tiếp ACG hài hòa|
+| [Con muỗi nghèo](https://blog.qwq.moe/) | *No description* |
+| [Geek Bunny](https://geektutu.com/) | Cam kết chia sẻ các thực hành kỹ thuật thú vị |
+| [Wikimon](https://www.wikimoe.com/) | Moe là công lý! Một trạm nhỏ dành cho một nhà thiết kế front-end yêu thích acg! |
+| [7gugu's blog](https://www.7gugu.com/) | Nơi lưu trữ những sở thích, lập trình, nhiếp ảnh, v.v. của tôi. |
+| [Yunyoujun](https://www.yunyoujun.cn) | Hy vọng là một người thú vị。 |
+| [Angelic47's Home](https://www.angelic47.com/) | Iruna · Anqi Shiqi · Sukio-A công chúa có thể chiến đấu |
+| [nhà thám hiểm](https://beyondstars.xyz/) | Hướng tới điều chưa biết · Khám phá ranh giới |
 | [Kingfish404](https://blog.kingfish404.cn/) | Stay curious,stay naive. WUT. Jin Yu's Blog |
 
 
-## Links申请
-请在申请之前加上本站友链   
-要求：
-1. 全站HTTPS
-2. 原创文章比例>80%，数量>10
-3. 站点稳定，不弃坑
+## Links
+Vui lòng thêm chuỗi bạn bè trang web này trước khi đăng ký
+Yêu cầu:
+1. HTTPS trên toàn bộ trang web
+2. Tỷ lệ bài gốc> 80%, số lượng> 10
+3. Trang web ổn định và không bỏ rơi hố
 

@@ -1,95 +1,95 @@
 ---
-layout: post
-title: Mayx的创想
-tags: [Mayx, 创想]
+bố cục: bài
+title: Ý tưởng của Mayx
+thẻ: [Mayx, Người sáng tạo]
 ---
 
-  这里是Mayx发布创想的地方。<!--more-->   
-  有的时候，我会有一些想要发明的想法，但是经常忘记。现在为了防止忘记，我将在我的博客上更新我的创想。
-  
-# 关于减肥的创想
-  人们希望减肥，一是为了健康，二是为了舒服，三是为了活动方便。   
-  但是减肥很痛苦，为什么？并不是因为减肥浪费时间，而是因为减肥会有糟糕的感觉回馈给大脑。   
-  不仅如此，越胖，减肥时越难受，越难受就越不想减肥，这样就会造成恶性循环。
-  
-## 解决的发明
-  既然如此，那么我们只要让大脑不会感受到减肥时产生的糟糕的感觉，就可以解决这个问题了。   
-  可是如果没有大脑的参与，人怎么能控制自己的身体动起来呢？我有一个想法：   
-  首先通过麻醉的方式阻断大脑与身体的连接，然后使用电极的方式直接操控肌肉运动，大概感觉就是把麻醉的人绑在跑步机上，周围提供充足的氧气，然后电极按照跑步机
-的速度调整腿摆动的频率，这样就能在没有意识的情况下减肥了。   
-  直到减到运动并不会让人感到痛苦时就可以结束了。   
-  这种减肥方式比现有的节食，还是抖抖机，甚至是抽脂都要好得多，那些方案对身体的伤害很大，而且效果也并不好。这种方案如果可以使用，我一定要试试（笑）。   
-  
-# 关于键盘和鼠标的创想
-  既然那么多设计师设计出各种各样千奇百怪的键盘，那我干脆也设计一个好了
+Đây là nơi Mayx phát hành ý tưởng của mình. <! - more ->
+Đôi khi, tôi có một số ý tưởng mà tôi muốn phát minh, nhưng tôi thường quên chúng. Bây giờ để tránh quên, tôi sẽ cập nhật ý tưởng của tôi trên blog của tôi.
 
-## 正文
-  我希望有一种键盘，它和鼠标在一起，也就是说，鼠标不是随便可以移动的，而是固定在键盘上，一个巴掌正好可以握住的那种。不过这样设计，就得让左撇子和右撇子用不同的键盘了……无所谓，然后鼠标上有四个按钮，一个滚轮，按钮中两个是左键和右键，另外两个可以自定义。在鼠标下面有很多像扬声器一样的孔，用来给手散热。具体的运动方式可以参考一下TrackPoint，就是那个IBM发明的在ThinkPad的小红点。那个太小，控制起来精度也不高，那么我设计成更大的，握起来也会更舒服吧。   
-  键盘还是QWERTY的就好，我也习惯了，不过这次我想把QWERTY键盘改成单手式的，因为另外一只手被鼠标占用了，不过这样对专门打字的人有点不友好……无所谓。具体键盘使用什么技术，我这次不想谈。接下来就是鼠标和键盘的中间位置了，因为手被鼠标和键盘占用了，中间我不想弄太多控制的按钮，我希望弄点显示系统工作状态的东西，比如当前网速，当前内存占用，CPU占用等等……然后在中间弄一个大大的电源按钮，按下它，整个键盘的LED灯会随着系统的启动依次亮起，关机时依次熄灭。除了这些，我希望在键盘顶部设置调节亮度的杆，在键盘旁设置调节音量的杆，在键盘后面加一组USB Hub……   
-  键盘整体长什么样？很简单，我觉得弄成半弧形——就是在圆环上截下来一部分的那种东西一样。   
-  如果出了这种键盘，我会不会买呢？恐怕不会……原谅我设计不考虑性价比……但是我觉得这种键盘要是发明出来，应该会很受欢迎吧……   
-  
-# 关于艾滋病的创想
-  前几天（今天是2018-12-2）有一个新闻，说是“世界首例免疫艾滋病的基因编辑婴儿在中国诞生”。于是我就想起来之前我所想的一个如何让艾滋病患者生出正常的小孩。
-  
-## 正文
-  首先，我们知道，HIV只会攻击T细胞，而感染AIDS后全身都是HIV病毒。那么可以想到，其实HIV不能攻击受精卵，那么只要在受精卵发育之前，让它脱离HIV的环境就好了。
-  具体原理和试管婴儿和克隆有点像，就是把受精卵移到正常的代孕母亲上就可以了。而且也不能用得了AIDS人的母乳喂养，这样，我觉得应该就可以生出正常的孩子了。
+# Suy nghĩ về giảm cân
+Con người muốn giảm cân, một là vì sức khỏe, hai là để thoải mái, ba là để thuận tiện cho các hoạt động.
+Nhưng giảm cân là đau đớn, tại sao? Không phải vì giảm cân là lãng phí thời gian, mà vì giảm cân sẽ mang lại cho não bộ cảm giác tồi tệ.
+Không những thế, càng béo thì càng khó giảm cân, càng không muốn giảm cân thì càng khó chịu, từ đó sinh ra một vòng luẩn quẩn.
 
-## 疑点
-  我不知道现在的人有没有水平在保留受精卵的同时消除HIV，如果不能，这样反倒会让代孕母亲感染AIDS……这可真是个问题……
+## Phát minh đã được cải tiến
+Trong trường hợp này, chúng ta có thể giải quyết vấn đề này miễn là chúng ta giữ cho não không có cảm giác tồi tệ khi giảm cân.
+Nhưng nếu không có sự tham gia của não thì làm sao một người có thể điều khiển cơ thể mình di chuyển được? Tôi có ý này:   
+Đầu tiên, kết nối giữa não và cơ thể bị chặn bởi thuốc gây mê, sau đó điện cực được sử dụng để điều khiển trực tiếp chuyển động của cơ. Có thể cảm giác giống như trói người được gây mê vào máy chạy bộ và cung cấp đủ oxy xung quanh, sau đó là các điện cực theo máy chạy bộ.
+Tốc độ điều chỉnh tần suất lắc chân, để bạn có thể giảm cân mà không nhận ra.
+Nó có thể được kết thúc cho đến khi nó được giảm bớt đến mức mà việc tập thể dục không làm cho người ta cảm thấy đau đớn.
+Cách giảm cân này tốt hơn rất nhiều so với cách ăn kiêng, lắc máy, hút mỡ hiện có, những chương trình đó rất có hại cho cơ thể, hiệu quả không cao. Nếu chương trình này có thể được sử dụng, tôi phải thử nó (cười).
 
-# 关于暖气毯的创想
-  最近学校通暖气了。我趴在暖气片上，突然想到，为什么不把暖气用在床上呢？
-  
-## 正文
-  我觉得电热毯费电，而且又小（倒不是没有大的）……其实最主要的是我趴在暖气片上感觉很舒服lol。   
-  我想做一个毯子，里面有很多空腔，然后把暖气水通到这个毯子里，然后就可以利用暖气让床变暖了。
-  
-## 自我审查
-  为什么没有这样的产品？我觉得可能是因为有暖气的人就用不着电热毯了，而用电热毯的人大多没有暖气，所以这个东西可能没有市场吧。   
-  不过可以暖被子啊lol...   
+# Ý tưởng về bàn phím và chuột
+Vì có rất nhiều nhà thiết kế đã thiết kế đủ loại bàn phím kỳ lạ nên tôi cũng sẽ thiết kế một chiếc.
 
-# 关于Mayx音乐处理系统的创想
-  在听音乐的时候（我听的音乐可以看作是DJ吧……），在头里就会浮现出一堆音轨和频谱之类的东西，于是我就想，能不能让机器把音乐中的音轨分离出来，这样既可以提高音质，又能方便编辑，而且也能加一些更有趣的东西……   
-  那么接下来这个音乐处理系统主要分为以下几块：
-  
-## Player
-  首先在播放前解析歌曲，将音乐中的各种乐器声、人声、杂音都分离出来，得到几个音轨，然后将分析出来的音轨进行优化：比如钢琴谱用系统中更加高清的波表重制，根据实际体验除去杂音等等，最后合并音轨，这样就能得到更加清晰的音乐了。   
-  优点：
-  1. 音乐更加清晰   
-  2. 可以根据波表自行更改音乐风格（有点像Remix？）   
-  3. 可以在提高音乐品质的同时减小音乐大小（类似于Midi，但是可以有人声和其他的声音）（当然得用特殊的文件格式，不是所有的音乐播放器都能播放）   
-  4. 处理得出的结果可以用于更多方面（接下来会说到）   
-  
-  缺点：
-  1. 需要预处理，不能直接播放
-  2. 有点担心波表的声音和现实中的乐器声区别太大   
-  
-## Editor
-  既然已经用Player将音轨拆分，那么就可以拿来编辑啦！   
-  当然不仅仅是这样，如果只是这样的话和其他的音乐编辑器有什么区别呢？   
-  这个音乐编辑器的优点是模块化，就如同Scratch一样，编辑音乐就和拼积木一样，让音痴也能轻易制作音乐！
-  
-## Other
-  其他方面我还想过很多，比如可以用到人工智能提高用户体验之类的啦：
-  
-### 自动Remix、串烧系统
-  根据用户听的音乐风格，可以将音乐Remix为用户喜欢的风格，而串烧则是将相似风格的音乐无缝穿插，我觉得以现在的科技水平应该是没有问题的吧……   
-  
-### 全自动鬼畜系统
-  将素材扔进去，首先把原音乐的人声分析出来，然后转换成注音，接下来在素材中找有相似注音的片段，自动剪辑，然后和优化后的伴奏合并，变成鬼畜视频。   
-  其实这样的话也可以把Vocaloid拉进来，就可以将任何一首歌转换为V家人员唱的歌了。   
-  这样也能大大减少做鬼畜的难度吧（我听说一般做鬼畜都要一个月……）   
-  
-### 音游谱自动处理系统
-  用解析出来的音轨转换为音游谱，这样自己喜欢的音乐就算没人制谱也可以玩了
-  
-### 自动编曲系统
-  既然新闻、诗歌都可以由机器人编写，那么谱曲应该也一样简单吧！收集所有曲谱，通过人工智能与大数据，写出评价最高的音乐也是有可能的吧！
-  
-## Talk is cheap. Show me the code
-  Are You Kidding Me?我一个菜鸡哪有本事写这么高级的代码，让大佬来写吧！（产品经理的思维）
+## cơ thể người
+Tôi hy vọng có một loại bàn phím, cùng với chuột, tức là chuột không thể di chuyển theo ý muốn mà được cố định trên bàn phím và có thể cầm bằng lòng bàn tay. Nhưng với thiết kế này, người thuận tay trái và phải sử dụng bàn phím khác nhau ... Điều đó không quan trọng, khi đó chuột có bốn nút, một con lăn, hai trong số các nút là nút trái và phải, và hai cái còn lại có thể được tùy chỉnh. Có nhiều lỗ giống như loa dưới chuột để tản nhiệt cho tay. Phương pháp luyện tập cụ thể có thể tham khảo TrackPoint, đây là một chấm đỏ nhỏ trong ThinkPad do IBM phát minh. Cái này quá nhỏ và độ chính xác điều khiển không cao nên mình thiết kế to hơn, cầm sẽ thoải mái hơn.
+Bàn phím vẫn là QWERTY, tôi đã quen rồi, nhưng lần này tôi muốn đổi bàn phím QWERTY sang dùng một tay, vì tay còn lại bị chuột chiếm, nhưng điều này hơi không thân thiện với dân chuyên đánh máy. ..Không quan trọng.. Tôi không muốn nói về công nghệ bàn phím cụ thể. Bước tiếp theo là vị trí giữa chuột và bàn phím, do tay mình bị chuột và bàn phím chiếm dụng nên mình không muốn làm quá nhiều nút điều khiển ở giữa, mình muốn làm một cái gì đó hiển thị trạng thái làm việc của hệ thống, chẳng hạn như tốc độ mạng hiện tại, mức sử dụng bộ nhớ hiện tại, dung lượng CPU, v.v. sau đó tạo một nút nguồn lớn ở giữa, nhấn vào đó, đèn LED của toàn bộ bàn phím sẽ bật khi hệ thống khởi động. và tắt khi hệ thống đã tắt. Ngoài những điều này, tôi hy vọng sẽ đặt cần điều chỉnh độ sáng trên đầu bàn phím, cần điều chỉnh âm lượng bên cạnh bàn phím và một bộ Hub USB phía sau bàn phím ...
+Nhìn chung bàn phím trông như thế nào? Nó rất đơn giản, tôi nghĩ nó được làm thành hình bán cung - giống như thứ gì đó cắt bỏ một phần của chiếc nhẫn.
+Nếu hết loại bàn phím này, tôi có mua nó không? Tôi e là không ... Thứ lỗi cho tôi vì đã không xem xét tính hiệu quả về chi phí của thiết kế ... Nhưng tôi nghĩ loại bàn phím này sẽ rất phổ biến nếu nó được phát minh ra ...
+
+# Sự tạo ra bệnh AIDS
+Cách đây vài ngày (hôm nay là 2018-12-2) có một thông tin cho rằng "một em bé được chỉnh sửa gen đầu tiên trên thế giới được chủng ngừa bệnh AIDS đã được sinh ra ở Trung Quốc." Vì vậy, tôi nhớ lại những gì tôi đã nghĩ về việc làm thế nào để bệnh nhân AIDS sinh ra những đứa trẻ bình thường.
+
+## cơ thể người
+Trước hết, chúng ta biết rằng HIV chỉ tấn công tế bào T, còn toàn bộ cơ thể là virus HIV sau khi bị nhiễm AIDS. Có thể hình dung rằng HIV không thể tấn công trứng đã thụ tinh, vì vậy, miễn là trứng thụ tinh phát triển, nó có thể bị loại bỏ khỏi môi trường HIV.
+Nguyên tắc cụ thể tương tự như thụ tinh ống nghiệm và nhân bản, đó là chỉ cần di chuyển trứng đã thụ tinh sang một người mẹ mang thai hộ bình thường. Ngoài ra, việc cho con bú của những người bị AIDS không được áp dụng, theo cách này, tôi nghĩ mình sẽ có thể sinh ra những đứa trẻ bình thường.
+
+## Nghi ngờ
+Tôi không biết bây giờ người ta có đủ trình độ để loại trừ HIV trong khi bảo quản trứng đã thụ tinh hay không, nếu không, điều này sẽ khiến người mẹ mang thai hộ bị nhiễm AIDS ... Đây thực sự là một vấn đề ...
+
+# Ý tưởng sưởi ấm chăn
+Trường đã được đóng điện gần đây. Tôi đang nằm trên máy sưởi và chợt nghĩ, tại sao không sử dụng máy sưởi trên giường?
+
+## cơ thể người
+Tôi nghĩ rằng chăn điện tốn điện, và chúng nhỏ (không phải là chúng lớn) ... Thực tế, cái chính là tôi cảm thấy thoải mái khi nằm trên bộ tản nhiệt.
+Tôi muốn làm một cái chăn có nhiều sâu răng trong đó, rồi truyền nước nóng vào trong cái chăn này, sau đó tôi có thể dùng máy sưởi để sưởi ấm giường.
+
+## Tự kiểm duyệt
+Tại sao không có sản phẩm đó? Tôi nghĩ rằng có thể là do những người sưởi ấm không cần chăn điện và hầu hết những người sử dụng chăn điện không có sưởi ấm, vì vậy có thể không có thị trường cho thứ này.
+Nhưng bạn có thể làm ấm chăn bông lol ...
+
+# Suy nghĩ về Hệ thống xử lý nhạc Mayx
+Khi nghe nhạc (bản nhạc mình nghe có thể coi là DJ ...), trong đầu sẽ hiện lên hàng đống nhạc phim, nên mình băn khoăn không biết có thể cho máy vào nhạc được không. Các đoạn âm thanh được tách biệt, có thể cải thiện chất lượng âm thanh, tạo điều kiện chỉnh sửa và thêm một số điều thú vị hơn ...
+Sau đó, hệ thống xử lý âm nhạc này chủ yếu được chia thành các phần sau:
+
+## Người chơi
+Trước tiên, hãy phân tích bài hát trước khi phát, tách các âm thanh nhạc cụ, giọng hát và tiếng ồn khác nhau trong nhạc để thu được một số bản âm thanh, sau đó tối ưu hóa các bản âm thanh đã phân tích: ví dụ: sử dụng các sóng độ nét cao hơn trong hệ thống để Điểm piano. Bảng được tái tạo, loại bỏ tạp âm theo trải nghiệm thực tế, v.v. và cuối cùng là ghép các bản âm thanh để bạn có được âm nhạc rõ ràng hơn.
+thuận lợi:
+1. Âm nhạc rõ ràng hơn
+2. Bạn có thể thay đổi phong cách âm nhạc theo bảng sóng (hơi giống Remix?)
+3. Có thể giảm dung lượng bản nhạc mà vẫn nâng cao chất lượng bản nhạc (tương tự như Midi, nhưng có giọng người và các âm thanh khác) (Tất nhiên là phải có định dạng file đặc biệt, không phải máy nghe nhạc nào cũng chơi được. )
+4. Kết quả của quá trình xử lý có thể được sử dụng theo nhiều cách hơn (chúng ta sẽ nói về nó tiếp theo)
+
+sự thiếu sót:
+1. Cần xử lý trước và không thể phát trực tiếp
+2. Tôi hơi lo lắng rằng âm thanh của bảng sóng quá khác so với âm thanh của các nhạc cụ thật.
+
+## Biên tập viên
+Bây giờ bạn đã chia đoạn âm thanh bằng Trình phát, bạn có thể sử dụng nó để chỉnh sửa!
+Tất nhiên không phải chỉ có vậy, nếu chỉ có vậy thì có gì khác biệt so với các trình chỉnh sửa âm nhạc khác?
+Ưu điểm của trình chỉnh sửa nhạc này là tính mô-đun. Cũng giống như Scratch, chỉnh sửa nhạc cũng giống như việc ghép các khối xây dựng lại với nhau, giúp người đam mê âm thanh dễ dàng tạo ra âm nhạc!
+
+## Khác
+Tôi đã nghĩ về rất nhiều khía cạnh khác, chẳng hạn như AI có thể được sử dụng để cải thiện trải nghiệm người dùng, v.v.:
+
+### Hệ thống hòa âm, xiên tự động
+Theo phong cách âm nhạc mà người dùng nghe, âm nhạc có thể được phối lại theo phong cách yêu thích của người dùng, trong khi xiên được xen kẽ một cách liền mạch với các phong cách âm nhạc tương tự. Tôi nghĩ nó không có vấn đề gì với trình độ công nghệ hiện nay ...
+
+### Hệ thống động vật ma tự động
+Đưa tài liệu vào, trước tiên phân tích giọng hát của bản nhạc gốc, sau đó chuyển nó thành ngữ âm, sau đó tìm một đoạn có ngữ âm tương tự trong tài liệu, tự động chỉnh sửa, sau đó ghép với phần đệm được tối ưu hóa để trở thành video ma.
+Trên thực tế, trong trường hợp này, Vocaloid cũng có thể được kéo vào, và bất kỳ bài hát nào cũng có thể được chuyển thành bài hát của gia đình V.
+Điều này cũng có thể làm giảm đáng kể khó khăn khi trở thành một con ma (tôi nghe nói rằng thường mất một tháng để trở thành một con thú ma ...)
+
+### Hệ thống xử lý tự động Music Tour Spectrum
+Chuyển đổi bản nhạc đã phân tích cú pháp thành bản nhạc để bạn có thể phát bản nhạc yêu thích của mình ngay cả khi chưa có ai tạo bản nhạc
+
+### Hệ thống sắp xếp tự động
+Vì tin tức và bài thơ có thể được viết bởi robot, nên việc soạn nhạc cũng dễ dàng như vậy! Thu thập tất cả các điểm số, sử dụng trí tuệ nhân tạo và dữ liệu lớn, bạn có thể viết nhạc được xếp hạng cao nhất!
+
+## Nói chuyện rất rẻ. Hãy cho tôi xem mã
+Anh Đùa Em à? Làm tân binh sao có thể viết được những đoạn code cao cấp như vậy, để các ông lớn viết! (Suy nghĩ của giám đốc sản phẩm)
 
 ---
-（未完待续）
+(Còn tiếp)

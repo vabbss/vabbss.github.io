@@ -1,135 +1,134 @@
 ---
-layout: post
-title: 免费订阅一个属于自己的邮件日报
-tags: [免费, 邮件, 日报, 心得]
+bố cục: bài
+title: Đăng ký miễn phí email hàng ngày của riêng bạn
+tags: [miễn phí, email, hàng ngày, trải nghiệm]
 ---
 
-  前几天，我给自己做了一个邮件订阅系统<!--more-->，是用PHP做的。这里不得不夸赞一下PHP，PHP真不愧是世界上最好的语言，我从来没学过PHP，但是我光靠百度搜到
-的东西拼凑就能搞出这个邮件订阅系统，还是很不错的，而且网上的免费PHP空间也有很多，所以就可以很轻易的给自己搞一个免费的邮件订阅系统。   
+Vài ngày trước, tôi đã tạo một hệ thống đăng ký email cho chính mình <! - more ->, được tạo bằng PHP. Tôi phải khen PHP ở đây, PHP quả thực là ngôn ngữ tốt nhất trên thế giới, tôi chưa học PHP bao giờ, nhưng tôi chỉ tìm thấy nó trên Baidu
+Hệ thống đăng ký thư này có thể được thực hiện bằng cách kết hợp những điều ở trên. Nó vẫn rất tốt và có nhiều không gian PHP miễn phí trên Internet, vì vậy bạn có thể dễ dàng xây dựng một hệ thống đăng ký thư miễn phí cho mình.
 
-# 制作方法
-  很简单，首先去百度上搜一个带sendmail和CronTab的免费PHP主机空间，然后在上面创建一个PHP文件，随便取什么名字都好，只要后缀是PHP就可以，然后把下面的代码
-粘上去，保存，然后在主机面板上设置CornTab任务，设定为每天运行一次，然后OK……对了，记得把下面变量`$to`里面的地址换成自己的邮箱地址，不然每次发送邮件就会发
-到我的邮箱了……
+# Phương pháp sản xuât
+Rất đơn giản, trước tiên hãy truy cập Baidu để tìm kiếm một không gian lưu trữ PHP miễn phí với sendmail và CronTab, sau đó tạo một tệp PHP trên đó, bất kỳ tên nào bạn muốn, miễn là hậu tố là PHP, sau đó đặt như sau mã số
+Dán nó, lưu nó, sau đó đặt tác vụ CornTab trên bảng điều khiển máy chủ, đặt nó chạy mỗi ngày một lần và sau đó OK ... Nhân tiện, hãy nhớ thay đổi địa chỉ trong biến `$ to` bên dưới thành địa chỉ của riêng bạn địa chỉ email, nếu không bạn sẽ gửi nó mỗi khi Thư được gửi
+Đó là hộp thư của tôi ...
 
-# 代码
-``` PHP
-<?php
-function curl_post_https($url,$data){ // 模拟提交数据函数
-    $curl = curl_init(); // 启动一个CURL会话
-    curl_setopt($curl, CURLOPT_URL, $url); // 要访问的地址
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0); // 对认证证书来源的检查
-    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 1); // 从证书中检查SSL加密算法是否存在
-    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); // 使用自动跳转
-    curl_setopt($curl, CURLOPT_AUTOREFERER, 1); // 自动设置Referer
-    curl_setopt($curl, CURLOPT_POST, 1); // 发送一个常规的Post请求
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $data); // Post提交的数据包
-    curl_setopt($curl, CURLOPT_TIMEOUT, 30); // 设置超时限制防止死循环
-    curl_setopt($curl, CURLOPT_HEADER, 0); // 显示返回的Header区域内容
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回
-    $tmpInfo = curl_exec($curl); // 执行操作
-    if (curl_errno($curl)) {
-        echo 'Errno'.curl_error($curl);//捕抓异常
+# Mã số
+`` PHP
+<? php
+function curl_post_https ($ url, $ data) {// mô phỏng hàm gửi dữ liệu
+    $ curl = curl_init (); // bắt đầu phiên CURL
+    curl_setopt ($ curl, CURLOPT_URL, $ url); // địa chỉ được truy cập
+    curl_setopt ($ curl, CURLOPT_SSL_VERIFYPEER, 0); // Kiểm tra nguồn của chứng chỉ xác thực
+    curl_setopt ($ curl, CURLOPT_SSL_VERIFYHOST, 1); // Kiểm tra xem thuật toán mã hóa SSL có tồn tại từ chứng chỉ hay không
+    curl_setopt ($ curl, CURLOPT_FOLLOWLOCATION, 1); // Sử dụng chuyển hướng tự động
+    curl_setopt ($ curl, CURLOPT_AUTOREFERER, 1); // tự động đặt Người giới thiệu
+    curl_setopt ($ curl, CURLOPT_POST, 1); // Gửi yêu cầu Đăng bài thông thường
+    curl_setopt ($ curl, CURLOPT_POSTFIELDS, $ data); // Gói dữ liệu gửi qua Bưu điện
+    curl_setopt ($ curl, CURLOPT_TIMEOUT, 30); // Đặt giới hạn thời gian chờ để ngăn vòng lặp vô hạn
+    curl_setopt ($ curl, CURLOPT_HEADER, 0); // Hiển thị nội dung của vùng Header trả về
+    curl_setopt ($ curl, CURLOPT_RETURNTRANSFER, 1); // Thông tin thu được được trả về dưới dạng một luồng tệp
+    $ tmpInfo = curl_exec ($ curl); // Thực hiện thao tác
+    if (curl_errno ($ curl)) {
+        echo'Errno'.curl_error ($ curl); // Bắt ngoại lệ
     }
-    curl_close($curl); // 关闭CURL会话
-    $backdata = json_decode($tmpInfo,true);
-    return $backdata['text']; // 返回数据，json格式
+    curl_close ($ curl); // Đóng phiên CURL
+    $ backdata = json_decode ($ tmpInfo, true);
+    return $ backdata ['text']; // trả về dữ liệu, định dạng json
 }
-function w_get(){
-        $url = 'https://yuri.gear.host/talk.php';
-        $data['info']       = '某地天气';
-        $data['userid']      = 'Mayx_Mail';
-        $retdata=curl_post_https($url,$data);
-        $data['info']       = '某地明天天气';
-        $retdata = $retdata . "<br>" .curl_post_https($url,$data);
-        $data['info']       = '某地后天天气';
-        $retdata=$retdata . "<br>" .curl_post_https($url,$data);
-        return $retdata;//返回json
+hàm w_get () {
+        $ url = 'https: //yuri.gear.host/talk.php';
+        $ data ['info'] = 'Thời tiết tại một địa điểm';
+        $ data ['userid'] = 'Mayx_Mail';
+        $ retdata = curl_post_https ($ url, $ data);
+        $ data ['info'] = 'Thời tiết ngày mai ở một địa điểm';
+        $ retdata = $ retdata. "<br>" .curl_post_https ($ url, $ data);
+        $ data ['info'] = 'Thời tiết ở một địa điểm ngày mốt';
+        $ retdata = $ retdata. "<br>" .curl_post_https ($ url, $ data);
+        return $ retdata; // trả về json
 }
-function xh_get(){
-        $url = 'https://yuri.gear.host/talk.php';
-        $data['info']       = '讲个笑话';
-        $data['userid']      = 'Mayx_Mail';
-        $retdata=curl_post_https($url,$data);
-        return $retdata;//返回json
+hàm xh_get () {
+        $ url = 'https: //yuri.gear.host/talk.php';
+        $ data ['info'] = 'Kể chuyện cười';
+        $ data ['userid'] = 'Mayx_Mail';
+        $ retdata = curl_post_https ($ url, $ data);
+        return $ retdata; // trả về json
 }
-function xw_get(){
-//RSS源地址列表数组 
-$rssfeed = array("http://www.people.com.cn/rss/it.xml"); 
+hàm xw_get () {
+// Mảng danh sách địa chỉ nguồn RSS
+$ rssfeed = array ("http://www.people.com.cn/rss/it.xml");
  
-for($i=0;$i<sizeof($rssfeed);$i++){//分解开始 
-    $buff = ""; 
-    $rss_str=""; 
-    //打开rss地址，并读取，读取失败则中止 
-    $fp = fopen($rssfeed[$i],"r") or die("can not open $rssfeed");  
-    while ( !feof($fp) ) { 
-        $buff .= fgets($fp,4096); 
-    } 
-    //关闭文件打开 
-    fclose($fp); 
- 
-    //建立一个 XML 解析器 
-    $parser = xml_parser_create(); 
-    //xml_parser_set_option -- 为指定 XML 解析进行选项设置 
-    xml_parser_set_option($parser,XML_OPTION_SKIP_WHITE,1); 
-    //xml_parse_into_struct -- 将 XML 数据解析到数组$values中 
-    xml_parse_into_struct($parser,$buff,$values,$idx); 
-    //xml_parser_free -- 释放指定的 XML 解析器 
-    xml_parser_free($parser); 
-    $j = 0;
-    foreach ($values as $val) { 
-        $tag = $val["tag"]; 
-        $type = $val["type"]; 
-        $value = $val["value"]; 
-        //标签统一转为小写 
-        $tag = strtolower($tag); 
- 
-        if ($tag == "item" && $type == "open"){ 
-            $is_item = 1; 
-        }else if ($tag == "item" && $type == "close") { 
-            //构造输出字符串 
-            $rss_str .= "<a href='".$link."' target=_blank>".$title."</a><br />"; 
-            $j++;
-            $is_item = 0; 
-        } 
-        //仅读取item标签中的内容 
-        if($is_item==1){ 
-            if ($tag == "title") {$title = $value;}         
-            if ($tag == "link") {$link = $value;} 
-        } 
-    if($j == 20){
-        break;
+for ($ i = 0; $ i <sizeof ($ rssfeed); $ i ++) {// Bắt đầu phân rã
+    $ buff = "";
+    $ rss_str = "";
+    // Mở địa chỉ rss và đọc, nếu đọc không thành công, nó sẽ dừng lại
+    $ fp = fopen ($ rssfeed [$ i], "r") hoặc die ("không thể mở $ rssfeed");
+    trong khi (! feof ($ fp)) {
+        $ buff. = fgets ($ fp, 4096);
     }
-    } 
-    //输出结果 
-    return $rss_str."<br />"; 
-} 
+    // Đóng mở tệp
+    fclose ($ fp);
+ 
+    // Xây dựng trình phân tích cú pháp XML
+    $ parser = xml_parser_create ();
+    // xml_parser_set_option - Đặt các tùy chọn để phân tích cú pháp XML được chỉ định
+    xml_parser_set_option ($ parser, XML_OPTION_SKIP_WHITE, 1);
+    // xml_parse_into_struct - Phân tích cú pháp dữ liệu XML thành mảng $ giá trị
+    xml_parse_into_struct ($ phân tích cú pháp, $ buff, $ giá trị, $ idx);
+    // xml_parser_free - phát hành trình phân tích cú pháp XML được chỉ định
+    xml_parser_free ($ parser);
+    $ j = 0;
+    foreach ($ giá trị dưới dạng $ val) {
+        $ tag = $ val ["tag"];
+        $ type = $ val ["type"];
+        $ value = $ val ["giá trị"];
+        // Nhãn được chuyển đổi đồng nhất thành chữ thường
+        $ tag = strtolower ($ tag);
+ 
+        if ($ tag == "item" && $ type == "open") {
+            $ is_item = 1;
+        } else if ($ tag == "item" && $ type == "close") {
+            // Xây dựng chuỗi đầu ra
+            $ rss_str. = "<a href='".$link."' target=_blank>". $ title. "</a> <br />";
+            $ j ++;
+            $ is_item = 0;
+        }
+        // Chỉ đọc nội dung trong thẻ item
+        if ($ is_item == 1) {
+            if ($ tag == "title") {$ title = $ value;}
+            if ($ tag == "liên kết") {$ link = $ value;}
+        }
+    nếu ($ j == 20) {
+        nghỉ;
+    }
+    }
+    // Kết quả đầu ra
+    return $ rss_str. "<br />";
 }
-$to = "mayx@outlook.com , unmayx@139.com";
-$subject = "Mayx日报";
-$txt = "
+}
+$ to = "mayx@outlook.com, unaayx@139.com";
+$ subject = "Mayx hàng ngày";
+$ txt = "
 <html>
 <body>
-<h1>Mayx日报</h1><hr>Hi,今天是" . date("Y-m-d") . "，以下是今天的日报：<br><small>
-" . file_get_contents("http://mappi.000webhostapp.com/hitokoto/") . "</small>
-<h2>天气预报</h2>" . w_get() . "<h2>每日笑话</h2>" . xh_get() . "<h2>今日新闻</h2>" . xw_get() . "<hr><small>" . file_get_contents("https://api.gushi.ci/all.txt") . "</small><br><center>Made By <a href=\"https://mabbs.github.io\">Mayx</a></center>
+<h1> Mayx Daily </h1> <hr> Xin chào, hôm nay là ". date (" Y-m-d ").", sau đây là hôm nay hàng ngày: <br> <small>
+". file_get_contents (" http://mappi.000webhostapp.com/hitokoto/ ")." </small>
+<h2> Dự báo thời tiết </h2> ". w_get ()." <h2> Truyện cười hàng ngày </h2> ". xh_get ()." <h2> Tin tức hôm nay </h2> ". xw_get ()." <hr > <small> ". file_get_contents (" https://api.gushi.ci/all.txt ")." </small> <br> <center> Được tạo bởi <a href = \ "https: // mabbs. github.io \ "> Mayx </a> </center>
 </body>
 </html>
 ";
-$headers = "MIME-Version: 1.0" . "\r\n" . 
-"Content-type: text/html;charset=utf-8" . "\r\n" . 
-"From: Mayx_Daily<Mayx_Site>";
+$ headers = "MIME-Phiên bản: 1.0". "\ r \ n".
+"Loại nội dung: text / html; charset = utf-8". "\ R \ n".
+"Từ: Mayx_Daily <Mayx_Site>";
 
-mail($to,$subject,$txt,$headers);
+thư ($ to, $ subject, $ txt, $ headers);
 ?>
-```
-（2018.11.12更新：增加了今日新闻）
-（2018.11.13更新：限制新闻条数为前20条）
+``
+(Bản cập nhật 2018.11.12: thêm tin tức hôm nay)
+(Bản cập nhật 2018.11.13: giới hạn số lượng mục tin tức ở top 20)
 
-# 后记
-  说实话，我更擅长用Linux Shell解决这种问题，可惜网上好像没有免费的云主机，听说Travis-CI好像也能搞这个事情，但是说实话，我英语并不是很好，让我看懂短一点的文档还可以，太长的就算了……   
-  但我还是努力的使用Travis-CI解决了这个问题，链接：[Mayx日报](https://mayx.tk/)
-  对了，运营商自己带的邮箱可以设定短信提醒，所以也可以搞成给手机发短信的形式，每天给自己发一条天气预报……那么这样的话，就把天气预报里的城市换成自己的城市吧！   
-  如果没有收到邮件，去垃圾邮件找找吧，然后把邮件地址设为白名单。   
-  如果谁想试试这个功能，可以在下面给我留言，我在验证通过后会把你加到我的服务器里面的。
-  
+# Tái bút
+Thành thật mà nói, tôi giải quyết vấn đề này tốt hơn với Linux Shell. Thật không may, dường như không có dịch vụ lưu trữ đám mây miễn phí trên Internet. Tôi nghe nói rằng Travis-CI dường như có thể làm được điều này, nhưng thành thật mà nói, tiếng Anh của tôi không tốt lắm, vì vậy tôi có thể hiểu các tài liệu ngắn hơn vẫn ổn, ngay cả khi chúng quá dài ...
+Nhưng tôi vẫn cố sử dụng Travis-CI để giải quyết vấn đề này, link: [Mayx 日报] (https://mayx.tk/)
+Nhân tiện, hộp thư riêng của nhà điều hành có thể được đặt để nhắc nhở SMS, vì vậy nó cũng có thể được sử dụng để gửi tin nhắn văn bản đến điện thoại di động và gửi dự báo thời tiết cho chính bạn mỗi ngày ... Sau đó, trong trường hợp này, hãy thay thế thành phố. trong dự báo thời tiết với chính bạn Thành phố bây giờ!
+Nếu bạn không nhận được email, hãy truy cập email spam để tìm nó, sau đó đặt địa chỉ email vào danh sách trắng.
+Nếu ai muốn thử tính năng này, bạn có thể để lại lời nhắn bên dưới, và tôi sẽ thêm bạn vào máy chủ của tôi sau khi xác minh được thông qua.
